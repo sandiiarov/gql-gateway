@@ -1,8 +1,9 @@
-import React from 'react';
+import * as React from 'react';
 
-type Props = {
+interface Props {
+  /** The content of the header */
   children: React.ReactNode;
-};
+}
 
 const Header: React.FunctionComponent<Props> = ({ children }) => (
   <h1>{children}</h1>
