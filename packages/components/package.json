@@ -7,12 +7,12 @@
     "build": "docz build --typescript"
   },
   "dependencies": {
-    "react": "^16.7.0-alpha.2",
-    "react-dom": "^16.7.0-alpha.2"
+    "react": "16.7.0-alpha.2",
+    "react-dom": "16.7.0-alpha.2"
   },
   "devDependencies": {
-    "docz": "^0.13.7",
-    "docz-theme-default": "^0.13.7",
-    "typescript": "^3.2.2"
+    "docz": "0.13.7",
+    "docz-theme-default": "0.13.7",
+    "typescript": "3.2.2"
   }
 }
