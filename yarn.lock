@@ -681,14 +681,8 @@
     "@emotion/weak-memoize" "0.2.2"
 
 "@emotion/core@^10.0.5":
-<<<<<<< Updated upstream
-  version "10.0.5"
-  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@emotion/core/-/core-10.0.5.tgz#fda655bb040deb69090faf2fa9d66d39b2bbe4bf"
-=======
   version "10.0.6"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@emotion/core/-/core-10.0.6.tgz#c10d7884a525728f05589b31da1c804a5d7449fa"
-  integrity sha1-wQ14hKUlco8FWJsx2hyASl10Sfo=
->>>>>>> Stashed changes
   dependencies:
     "@emotion/cache" "10.0.0"
     "@emotion/css" "^10.0.6"
@@ -696,16 +690,9 @@
     "@emotion/sheet" "0.9.2"
     "@emotion/utils" "0.11.1"
 
-<<<<<<< Updated upstream
-"@emotion/css@^10.0.5":
-  version "10.0.5"
-  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@emotion/css/-/css-10.0.5.tgz#3bc6593fb98ba096a1ccd843d9f32744929b6cfd"
-=======
 "@emotion/css@^10.0.6":
   version "10.0.6"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@emotion/css/-/css-10.0.6.tgz#50b325e6ee18f0ca791036149a985e3b40a9354b"
-  integrity sha1-ULMl5u4Y8Mp5EDYUmpheO0CpNUs=
->>>>>>> Stashed changes
   dependencies:
     "@emotion/serialize" "^0.11.3"
     "@emotion/utils" "0.11.1"
@@ -749,14 +736,8 @@
     object-assign "^4.1.1"
 
 "@emotion/styled@^10.0.5":
-<<<<<<< Updated upstream
-  version "10.0.5"
-  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@emotion/styled/-/styled-10.0.5.tgz#f742dd6f9f5f4b2fde275534771f69419a7549bd"
-=======
   version "10.0.6"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@emotion/styled/-/styled-10.0.6.tgz#e6591cf7b0fd56e82a0ae7e421568229e7c6d5f9"
-  integrity sha1-5lkc97D9VugqCufkIVaCKefG1fk=
->>>>>>> Stashed changes
   dependencies:
     "@emotion/styled-base" "^10.0.5"
     babel-plugin-emotion "^10.0.6"
@@ -782,14 +763,8 @@
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@hutson/parse-repository-url/-/parse-repository-url-3.0.0.tgz#3fa172e3006f36e547fb49835bf25fc487a29f1c"
 
 "@lerna/add@^3.8.5":
-<<<<<<< Updated upstream
-  version "3.8.5"
-  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@lerna/add/-/add-3.8.5.tgz#f7dec6b9ce20bc42d64bbb29381b62a918c8c7aa"
-=======
   version "3.9.0"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@lerna/add/-/add-3.9.0.tgz#cc6bacfdc549e914bf52ea6a7adfe2d9bcd67cfe"
-  integrity sha1-zGus/cVJ6RS/Uupqet/i2bzWfP4=
->>>>>>> Stashed changes
   dependencies:
     "@lerna/bootstrap" "^3.9.0"
     "@lerna/command" "^3.8.5"
@@ -809,16 +784,9 @@
     "@lerna/validation-error" "^3.6.0"
     libnpm "^2.0.1"
 
-<<<<<<< Updated upstream
-"@lerna/bootstrap@^3.8.5":
-  version "3.8.5"
-  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@lerna/bootstrap/-/bootstrap-3.8.5.tgz#0063763aa2ad8f8dec96dd92f42a01e053fa7290"
-=======
 "@lerna/bootstrap@^3.8.5", "@lerna/bootstrap@^3.9.0":
   version "3.9.0"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@lerna/bootstrap/-/bootstrap-3.9.0.tgz#c21ad5a8bba09a71f0977e7d13b1ef420272630b"
-  integrity sha1-whrVqLugmnHwl359E7HvQgJyYws=
->>>>>>> Stashed changes
   dependencies:
     "@lerna/batch-packages" "^3.6.0"
     "@lerna/command" "^3.8.5"
@@ -845,14 +813,8 @@
     semver "^5.5.0"
 
 "@lerna/changed@^3.8.5":
-<<<<<<< Updated upstream
-  version "3.8.5"
-  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@lerna/changed/-/changed-3.8.5.tgz#fe2712c66caf768a31568b4b6b864c664d084298"
-=======
   version "3.9.0"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@lerna/changed/-/changed-3.9.0.tgz#0cbe176dd41d90f25606622131ee14004e307dd4"
-  integrity sha1-DL4XbdQdkPJWBmIhMe4UAE4wfdQ=
->>>>>>> Stashed changes
   dependencies:
     "@lerna/collect-updates" "^3.9.0"
     "@lerna/command" "^3.8.5"
@@ -860,16 +822,9 @@
     "@lerna/output" "^3.6.0"
     "@lerna/version" "^3.9.0"
 
-<<<<<<< Updated upstream
-"@lerna/check-working-tree@^3.8.1":
-  version "3.8.1"
-  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@lerna/check-working-tree/-/check-working-tree-3.8.1.tgz#bda0719f3a3ceaed976b08f57b054af6a0acf295"
-=======
 "@lerna/check-working-tree@^3.9.0":
   version "3.9.0"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@lerna/check-working-tree/-/check-working-tree-3.9.0.tgz#2f057ad788759eb783b6bf42da87eb8018b78c4f"
-  integrity sha1-LwV614h1nreDtr9C2ofrgBi3jE8=
->>>>>>> Stashed changes
   dependencies:
     "@lerna/describe-ref" "^3.9.0"
     "@lerna/validation-error" "^3.6.0"
@@ -883,14 +838,8 @@
     strong-log-transformer "^2.0.0"
 
 "@lerna/clean@^3.8.5":
-<<<<<<< Updated upstream
-  version "3.8.5"
-  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@lerna/clean/-/clean-3.8.5.tgz#42ec3b70a032b38bbdcac6ea804baf2df22432cf"
-=======
   version "3.9.0"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@lerna/clean/-/clean-3.9.0.tgz#8c59a70202fbdfa18349c33dd08c7adf95cc7957"
-  integrity sha1-jFmnAgL736GDScM90Ix635XMeVc=
->>>>>>> Stashed changes
   dependencies:
     "@lerna/command" "^3.8.5"
     "@lerna/filter-options" "^3.9.0"
@@ -910,16 +859,9 @@
     libnpm "^2.0.1"
     yargs "^12.0.1"
 
-<<<<<<< Updated upstream
-"@lerna/collect-updates@^3.8.1":
-  version "3.8.1"
-  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@lerna/collect-updates/-/collect-updates-3.8.1.tgz#e227efe9955b56b258baf7e8f853f779d40556a7"
-=======
 "@lerna/collect-updates@^3.9.0":
   version "3.9.0"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@lerna/collect-updates/-/collect-updates-3.9.0.tgz#d56d731ac5c80b43b0da830cd398fd27a89894fe"
-  integrity sha1-1W1zGsXIC0Ow2oMM05j9J6iYlP4=
->>>>>>> Stashed changes
   dependencies:
     "@lerna/child-process" "^3.3.0"
     "@lerna/describe-ref" "^3.9.0"
@@ -985,16 +927,9 @@
     validate-npm-package-name "^3.0.0"
     whatwg-url "^7.0.0"
 
-<<<<<<< Updated upstream
-"@lerna/describe-ref@^3.8.1":
-  version "3.8.1"
-  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@lerna/describe-ref/-/describe-ref-3.8.1.tgz#b99ef6f8aa58fa9389af1e03beaa716cc6cb506d"
-=======
 "@lerna/describe-ref@^3.9.0":
   version "3.9.0"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@lerna/describe-ref/-/describe-ref-3.9.0.tgz#4e1313eeb1dee4477c32cdd508553e610eb91e84"
-  integrity sha1-ThMT7rHe5Ed8Ms3VCFU+YQ65HoQ=
->>>>>>> Stashed changes
   dependencies:
     "@lerna/child-process" "^3.3.0"
     libnpm "^2.0.1"
@@ -1009,14 +944,8 @@
     libnpm "^2.0.1"
 
 "@lerna/exec@^3.8.5":
-<<<<<<< Updated upstream
-  version "3.8.5"
-  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@lerna/exec/-/exec-3.8.5.tgz#ab95de1bec09789e4ff3b2f7683c7f565eaeed38"
-=======
   version "3.9.0"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@lerna/exec/-/exec-3.9.0.tgz#f6f4ea913ef1d708706affa02514daa359d23010"
-  integrity sha1-9vTqkT7x1whwav+gJRTao1nSMBA=
->>>>>>> Stashed changes
   dependencies:
     "@lerna/batch-packages" "^3.6.0"
     "@lerna/child-process" "^3.3.0"
@@ -1025,16 +954,9 @@
     "@lerna/run-parallel-batches" "^3.0.0"
     "@lerna/validation-error" "^3.6.0"
 
-<<<<<<< Updated upstream
-"@lerna/filter-options@^3.8.1":
-  version "3.8.1"
-  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@lerna/filter-options/-/filter-options-3.8.1.tgz#8c9708d60681383051d90a06eaa292dddd1d16b4"
-=======
 "@lerna/filter-options@^3.9.0":
   version "3.9.0"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@lerna/filter-options/-/filter-options-3.9.0.tgz#d91a60df341cda6ff049d8a545872ef9d786907a"
-  integrity sha1-2Rpg3zQc2m/wSdilRYcu+deGkHo=
->>>>>>> Stashed changes
   dependencies:
     "@lerna/collect-updates" "^3.9.0"
     "@lerna/filter-packages" "^3.6.0"
@@ -1107,14 +1029,8 @@
     slash "^1.0.0"
 
 "@lerna/list@^3.8.5":
-<<<<<<< Updated upstream
-  version "3.8.5"
-  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@lerna/list/-/list-3.8.5.tgz#3b2a80ed8f3fc7ea8ab97ea45cbedcb0d3258f5e"
-=======
   version "3.9.0"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@lerna/list/-/list-3.9.0.tgz#5b73e05baf62087523449e09f6bf71810195ff64"
-  integrity sha1-W3PgW69iCHUjRJ4J9r9xgQGV/2Q=
->>>>>>> Stashed changes
   dependencies:
     "@lerna/command" "^3.8.5"
     "@lerna/filter-options" "^3.9.0"
@@ -1163,16 +1079,9 @@
     signal-exit "^3.0.2"
     write-pkg "^3.1.0"
 
-<<<<<<< Updated upstream
-"@lerna/npm-publish@^3.8.5":
-  version "3.8.5"
-  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@lerna/npm-publish/-/npm-publish-3.8.5.tgz#c6718be54dff1e7b701aed7763b213d2002b988d"
-=======
 "@lerna/npm-publish@^3.9.0":
   version "3.9.0"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@lerna/npm-publish/-/npm-publish-3.9.0.tgz#6a3811d384e15c7d855e65df2eda61acd0509912"
-  integrity sha1-ajgR04ThXH2FXmXfLtphrNBQmRI=
->>>>>>> Stashed changes
   dependencies:
     "@lerna/run-lifecycle" "^3.9.0"
     figgy-pudding "^3.5.1"
@@ -1193,16 +1102,9 @@
   dependencies:
     libnpm "^2.0.1"
 
-<<<<<<< Updated upstream
-"@lerna/pack-directory@^3.8.2":
-  version "3.8.2"
-  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@lerna/pack-directory/-/pack-directory-3.8.2.tgz#5ffddce7781998195cffcbe51128c5a69dd3ca7a"
-=======
 "@lerna/pack-directory@^3.9.0":
   version "3.9.0"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@lerna/pack-directory/-/pack-directory-3.9.0.tgz#f6f77838d8d7a095a3f07d27955bdd3580b6afe2"
-  integrity sha1-9vd4ONjXoJWj8H0nlVvdNYC2r+I=
->>>>>>> Stashed changes
   dependencies:
     "@lerna/get-packed" "^3.7.0"
     "@lerna/package" "^3.7.2"
@@ -1254,14 +1156,8 @@
     libnpm "^2.0.1"
 
 "@lerna/publish@^3.8.5":
-<<<<<<< Updated upstream
-  version "3.8.5"
-  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@lerna/publish/-/publish-3.8.5.tgz#27437c44e76c5f2f71af339275c5582f80bd769c"
-=======
   version "3.9.0"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@lerna/publish/-/publish-3.9.0.tgz#c58bb307f1f3684c5ddfbe639a2064fdc3a42289"
-  integrity sha1-xYuzB/HzaExd375jmiBk/cOkIok=
->>>>>>> Stashed changes
   dependencies:
     "@lerna/batch-packages" "^3.6.0"
     "@lerna/check-working-tree" "^3.9.0"
@@ -1313,16 +1209,9 @@
     path-exists "^3.0.0"
     rimraf "^2.6.2"
 
-<<<<<<< Updated upstream
-"@lerna/run-lifecycle@^3.8.2":
-  version "3.8.2"
-  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@lerna/run-lifecycle/-/run-lifecycle-3.8.2.tgz#fe97f771506e2351aa170ec75ef8e6d7e9b94509"
-=======
 "@lerna/run-lifecycle@^3.9.0":
   version "3.9.0"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@lerna/run-lifecycle/-/run-lifecycle-3.9.0.tgz#c9ce63491e47b2c7eeac49baea68a33a884ee4a4"
-  integrity sha1-yc5jSR5HssfurEm66mijOohO5KQ=
->>>>>>> Stashed changes
   dependencies:
     "@lerna/npm-conf" "^3.7.0"
     figgy-pudding "^3.5.1"
@@ -1336,14 +1225,8 @@
     p-map-series "^1.0.0"
 
 "@lerna/run@^3.8.5":
-<<<<<<< Updated upstream
-  version "3.8.5"
-  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@lerna/run/-/run-3.8.5.tgz#5c22b4d15a29a3f98f5bd367fed754e2cf495e89"
-=======
   version "3.9.0"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@lerna/run/-/run-3.9.0.tgz#79119e49a48a6a7418b23029fb2cf523625ce8b1"
-  integrity sha1-eRGeSaSKanQYsjAp+yz1I2Jc6LE=
->>>>>>> Stashed changes
   dependencies:
     "@lerna/batch-packages" "^3.6.0"
     "@lerna/command" "^3.8.5"
@@ -1386,16 +1269,9 @@
   dependencies:
     libnpm "^2.0.1"
 
-<<<<<<< Updated upstream
-"@lerna/version@^3.8.5":
-  version "3.8.5"
-  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@lerna/version/-/version-3.8.5.tgz#dd4b95d1ed40211063bb546bba1581db4bab9b1a"
-=======
 "@lerna/version@^3.8.5", "@lerna/version@^3.9.0":
   version "3.9.0"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@lerna/version/-/version-3.9.0.tgz#8b3295642eeddebeec6861ecf0c4b375cee3ffba"
-  integrity sha1-izKVZC7t3r7saGHs8MSzdc7j/7o=
->>>>>>> Stashed changes
   dependencies:
     "@lerna/batch-packages" "^3.6.0"
     "@lerna/check-working-tree" "^3.9.0"
@@ -1681,12 +1557,7 @@
 
 "@types/react-dom@16.0.11":
   version "16.0.11"
-<<<<<<< Updated upstream
-  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-16.0.11.tgz#bd10ccb0d9260343f4b9a49d4f7a8330a5c1f081"
-=======
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@types/react-dom/-/react-dom-16.0.11.tgz#bd10ccb0d9260343f4b9a49d4f7a8330a5c1f081"
-  integrity sha1-vRDMsNkmA0P0uaSdT3qDMKXB8IE=
->>>>>>> Stashed changes
   dependencies:
     "@types/react" "*"
 
@@ -2313,28 +2184,16 @@ babel-code-frame@^6.22.0:
 
 babel-loader@8.0.5, babel-loader@^8.0.2:
   version "8.0.5"
-<<<<<<< Updated upstream
-  resolved "https://registry.yarnpkg.com/babel-loader/-/babel-loader-8.0.5.tgz#225322d7509c2157655840bba52e46b6c2f2fe33"
-=======
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/babel-loader/-/babel-loader-8.0.5.tgz#225322d7509c2157655840bba52e46b6c2f2fe33"
-  integrity sha1-IlMi11CcIVdlWEC7pS5GtsLy/jM=
->>>>>>> Stashed changes
   dependencies:
     find-cache-dir "^2.0.0"
     loader-utils "^1.0.2"
     mkdirp "^0.5.1"
     util.promisify "^1.0.0"
 
-<<<<<<< Updated upstream
-babel-plugin-emotion@^10.0.5:
-  version "10.0.5"
-  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/babel-plugin-emotion/-/babel-plugin-emotion-10.0.5.tgz#05ec47cde94f984b0b2aebdd41f81876cf9cbb24"
-=======
 babel-plugin-emotion@^10.0.6:
   version "10.0.6"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/babel-plugin-emotion/-/babel-plugin-emotion-10.0.6.tgz#fd9bb4a5dc6cf2289b656215dbbc80469fd251b3"
-  integrity sha1-/Zu0pdxs8iibZWIV27yARp/SUbM=
->>>>>>> Stashed changes
   dependencies:
     "@babel/helper-module-imports" "^7.0.0"
     "@emotion/hash" "0.7.1"
@@ -2348,14 +2207,8 @@ babel-plugin-emotion@^10.0.6:
     source-map "^0.5.7"
 
 babel-plugin-macros@^2.0.0, babel-plugin-macros@^2.4.3:
-<<<<<<< Updated upstream
-  version "2.4.4"
-  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/babel-plugin-macros/-/babel-plugin-macros-2.4.4.tgz#d7bb55ba6473094ac0e1087fbceb062ebfd2337f"
-=======
   version "2.4.5"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/babel-plugin-macros/-/babel-plugin-macros-2.4.5.tgz#7000a9b1f72d19ceee19a5804f1d23d6daf38c13"
-  integrity sha1-cACpsfctGc7uGaWATx0j1trzjBM=
->>>>>>> Stashed changes
   dependencies:
     cosmiconfig "^5.0.5"
     resolve "^1.8.1"
@@ -3850,14 +3703,9 @@ docz-core@^0.13.7:
     ws "^6.1.2"
     yargs "^12.0.5"
 
-docz-theme-default@^0.13.7:
+docz-theme-default@0.13.7:
   version "0.13.7"
-<<<<<<< Updated upstream
   resolved "https://registry.yarnpkg.com/docz-theme-default/-/docz-theme-default-0.13.7.tgz#16a2641df2364bb6b1ec5d8f10e21d8eb02b5060"
-=======
-  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/docz-theme-default/-/docz-theme-default-0.13.7.tgz#16a2641df2364bb6b1ec5d8f10e21d8eb02b5060"
-  integrity sha1-FqJkHfI2S7ax7F2PEOIdjrArUGA=
->>>>>>> Stashed changes
   dependencies:
     "@emotion/core" "^10.0.5"
     "@emotion/styled" "^10.0.5"
@@ -3912,14 +3760,9 @@ docz-utils@^0.13.6:
     unist-util-is "^2.1.2"
     unist-util-visit "^1.4.0"
 
-docz@^0.13.7:
+docz@0.13.7, docz@^0.13.7:
   version "0.13.7"
-<<<<<<< Updated upstream
-  resolved "https://registry.yarnpkg.com/docz/-/docz-0.13.7.tgz#dcf6bd4bcdec121cbd973a21da25eef2108a4ac3"
-=======
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/docz/-/docz-0.13.7.tgz#dcf6bd4bcdec121cbd973a21da25eef2108a4ac3"
-  integrity sha1-3Pa9S83sEhy9lzoh2iXu8hCKSsM=
->>>>>>> Stashed changes
   dependencies:
     "@mdx-js/tag" "^0.16.6"
     "@sindresorhus/slugify" "^0.6.0"
@@ -4058,14 +3901,8 @@ ejs@^2.6.1:
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/ejs/-/ejs-2.6.1.tgz#498ec0d495655abc6f23cd61868d926464071aa0"
 
 electron-to-chromium@^1.3.62, electron-to-chromium@^1.3.96:
-<<<<<<< Updated upstream
-  version "1.3.98"
-  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/electron-to-chromium/-/electron-to-chromium-1.3.98.tgz#f200bdac84b1110d7d9904f34f4fc6d5573a8a9c"
-=======
   version "1.3.100"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/electron-to-chromium/-/electron-to-chromium-1.3.100.tgz#899fb088def210aee6b838a47655bbb299190e13"
-  integrity sha1-iZ+wiN7yEK7muDikdlW7spkZDhM=
->>>>>>> Stashed changes
 
 elliptic@^6.0.0:
   version "6.4.1"
@@ -4088,14 +3925,8 @@ emojis-list@^2.0.0:
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/emojis-list/-/emojis-list-2.1.0.tgz#4daa4d9db00f9819880c79fa457ae5b09a1fd389"
 
 emotion-theming@^10.0.5:
-<<<<<<< Updated upstream
-  version "10.0.5"
-  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/emotion-theming/-/emotion-theming-10.0.5.tgz#dfd783a4b45c7142cbe1d68d03a0b934a25e452f"
-=======
   version "10.0.6"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/emotion-theming/-/emotion-theming-10.0.6.tgz#869f8d40e4f2549dbc165bd9c43bdf5fbedfeab8"
-  integrity sha1-hp+NQOTyVJ28FlvZxDvfX77f6rg=
->>>>>>> Stashed changes
   dependencies:
     "@emotion/weak-memoize" "0.2.2"
     hoist-non-react-statics "^2.3.1"
@@ -4428,14 +4259,8 @@ fast-deep-equal@^2.0.1:
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/fast-deep-equal/-/fast-deep-equal-2.0.1.tgz#7b05218ddf9667bf7f370bf7fdb2cb15fdd0aa49"
 
 fast-glob@^2.0.2, fast-glob@^2.2.4:
-<<<<<<< Updated upstream
-  version "2.2.4"
-  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/fast-glob/-/fast-glob-2.2.4.tgz#e54f4b66d378040e0e4d6a68ec36bbc5b04363c0"
-=======
   version "2.2.6"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/fast-glob/-/fast-glob-2.2.6.tgz#a5d5b697ec8deda468d85a74035290a025a95295"
-  integrity sha1-pdW2l+yN7aRo2Fp0A1KQoCWpUpU=
->>>>>>> Stashed changes
   dependencies:
     "@mrmlnc/readdir-enhanced" "^2.2.1"
     "@nodelib/fs.stat" "^1.1.2"
@@ -5180,12 +5005,7 @@ html-minifier@^3.2.3, html-minifier@^3.4.3, html-minifier@^3.5.21:
 
 html-webpack-plugin@3.2.0:
   version "3.2.0"
-<<<<<<< Updated upstream
-  resolved "https://registry.yarnpkg.com/html-webpack-plugin/-/html-webpack-plugin-3.2.0.tgz#b01abbd723acaaa7b37b6af4492ebda03d9dd37b"
-=======
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/html-webpack-plugin/-/html-webpack-plugin-3.2.0.tgz#b01abbd723acaaa7b37b6af4492ebda03d9dd37b"
-  integrity sha1-sBq71yOsqqeze2r0SS69oD2d03s=
->>>>>>> Stashed changes
   dependencies:
     html-minifier "^3.2.3"
     loader-utils "^0.2.16"
@@ -5279,14 +5099,8 @@ https-proxy-agent@^2.2.1:
     debug "^3.1.0"
 
 humanize-duration@^3.15.3:
-<<<<<<< Updated upstream
-  version "3.16.0"
-  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/humanize-duration/-/humanize-duration-3.16.0.tgz#c7ec3b898305f007c63893f891870b2b5a2e0a7d"
-=======
   version "3.17.0"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/humanize-duration/-/humanize-duration-3.17.0.tgz#a2cec75f9329ce68f8797b23d31d1f988992d11b"
-  integrity sha1-os7HX5Mpzmj4eXsj0x0fmImS0Rs=
->>>>>>> Stashed changes
 
 humanize-ms@^1.2.1:
   version "1.2.1"
@@ -5937,12 +5751,7 @@ lcid@^2.0.0:
 
 lerna@3.8.5:
   version "3.8.5"
-<<<<<<< Updated upstream
-  resolved "https://registry.yarnpkg.com/lerna/-/lerna-3.8.5.tgz#30001989ccd44dca631c1a77eb4ec1238c4a6dfc"
-=======
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/lerna/-/lerna-3.8.5.tgz#30001989ccd44dca631c1a77eb4ec1238c4a6dfc"
-  integrity sha1-MAAZiczUTcpjHBp3607BI4xKbfw=
->>>>>>> Stashed changes
   dependencies:
     "@lerna/add" "^3.8.5"
     "@lerna/bootstrap" "^3.8.5"
@@ -7806,14 +7615,8 @@ react-docgen-typescript-loader@^3.0.0-rc.0:
     react-docgen-typescript "^1.9.0"
 
 react-docgen-typescript@^1.9.0:
-<<<<<<< Updated upstream
-  version "1.12.2"
-  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/react-docgen-typescript/-/react-docgen-typescript-1.12.2.tgz#d5fb578d12f6876efdde69176f4ea658e75a9a29"
-=======
   version "1.12.3"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/react-docgen-typescript/-/react-docgen-typescript-1.12.3.tgz#fe62a5ce82e93573e316366e53adfe8273121c70"
-  integrity sha1-/mKlzoLpNXPjFjZuU63+gnMSHHA=
->>>>>>> Stashed changes
 
 react-docgen@^3.0.0-rc.1:
   version "3.0.0-rc.2"
@@ -7829,30 +7632,13 @@ react-docgen@^3.0.0-rc.1:
 
 react-dom@16.7.0-alpha.2, react-dom@^16.7.0:
   version "16.7.0-alpha.2"
-<<<<<<< Updated upstream
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.7.0-alpha.2.tgz#16632880ed43676315991d8b412cce6975a30282"
-=======
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/react-dom/-/react-dom-16.7.0-alpha.2.tgz#16632880ed43676315991d8b412cce6975a30282"
-  integrity sha1-FmMogO1DZ2MVmR2LQSzOaXWjAoI=
->>>>>>> Stashed changes
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
     prop-types "^15.6.2"
     scheduler "^0.12.0-alpha.2"
 
-<<<<<<< Updated upstream
-react-dom@^16.7.0:
-  version "16.7.0"
-  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/react-dom/-/react-dom-16.7.0.tgz#a17b2a7ca89ee7390bc1ed5eb81783c7461748b8"
-  dependencies:
-    loose-envify "^1.1.0"
-    object-assign "^4.1.1"
-    prop-types "^15.6.2"
-    scheduler "^0.12.0"
-
-=======
->>>>>>> Stashed changes
 react-error-overlay@^5.1.2:
   version "5.1.2"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/react-error-overlay/-/react-error-overlay-5.1.2.tgz#888957b884d4b25b083a82ad550f7aad96585394"
@@ -7861,14 +7647,9 @@ react-feather@^1.1.5:
   version "1.1.5"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/react-feather/-/react-feather-1.1.5.tgz#f7f9384c17d2d061b5b8298f46efc0e497f48469"
 
-react-hot-loader@^4.6.3:
+react-hot-loader@4.6.3, react-hot-loader@^4.6.3:
   version "4.6.3"
-<<<<<<< Updated upstream
   resolved "https://registry.yarnpkg.com/react-hot-loader/-/react-hot-loader-4.6.3.tgz#d9c8923c45b35fd51538ba4297081a00be6bccb1"
-=======
-  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/react-hot-loader/-/react-hot-loader-4.6.3.tgz#d9c8923c45b35fd51538ba4297081a00be6bccb1"
-  integrity sha1-2ciSPEWzX9UVOLpClwgaAL5rzLE=
->>>>>>> Stashed changes
   dependencies:
     fast-levenshtein "^2.0.6"
     global "^4.3.0"
@@ -7906,14 +7687,8 @@ react-live@^1.12.0:
     unescape "^0.2.0"
 
 react-perfect-scrollbar@^1.4.2:
-<<<<<<< Updated upstream
-  version "1.4.2"
-  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/react-perfect-scrollbar/-/react-perfect-scrollbar-1.4.2.tgz#48cc3466bedf4df6e2632a543b055462d5e78808"
-=======
   version "1.4.4"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/react-perfect-scrollbar/-/react-perfect-scrollbar-1.4.4.tgz#5567453775579f66a4ef5fa9787914729741347b"
-  integrity sha1-VWdFN3VXn2ak71+peHkUcpdBNHs=
->>>>>>> Stashed changes
   dependencies:
     perfect-scrollbar "^1.4.0"
     prop-types "^15.6.1"
@@ -7962,30 +7737,13 @@ react-sizes@^1.0.4:
 
 react@16.7.0-alpha.2, react@^16.7.0:
   version "16.7.0-alpha.2"
-<<<<<<< Updated upstream
-  resolved "https://registry.yarnpkg.com/react/-/react-16.7.0-alpha.2.tgz#924f2ae843a46ea82d104a8def7a599fbf2c78ce"
-=======
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/react/-/react-16.7.0-alpha.2.tgz#924f2ae843a46ea82d104a8def7a599fbf2c78ce"
-  integrity sha1-kk8q6EOkbqgtEEqN73pZn78seM4=
->>>>>>> Stashed changes
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
     prop-types "^15.6.2"
     scheduler "^0.12.0-alpha.2"
 
-<<<<<<< Updated upstream
-react@^16.7.0:
-  version "16.7.0"
-  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/react/-/react-16.7.0.tgz#b674ec396b0a5715873b350446f7ea0802ab6381"
-  dependencies:
-    loose-envify "^1.1.0"
-    object-assign "^4.1.1"
-    prop-types "^15.6.2"
-    scheduler "^0.12.0"
-
-=======
->>>>>>> Stashed changes
 read-cmd-shim@^1.0.1:
   version "1.0.1"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/read-cmd-shim/-/read-cmd-shim-1.0.1.tgz#2d5d157786a37c055d22077c32c53f8329e91c7b"
@@ -9360,34 +9118,19 @@ tslib@^1.8.0, tslib@^1.8.1, tslib@^1.9.0:
   version "1.9.3"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/tslib/-/tslib-1.9.3.tgz#d7e4dd79245d85428c4d7e4822a79917954ca286"
 
-tslint-config-prettier@1.17.0, tslint-config-prettier@^1.17.0:
+tslint-config-prettier@1.17.0:
   version "1.17.0"
-<<<<<<< Updated upstream
-  resolved "https://registry.yarnpkg.com/tslint-config-prettier/-/tslint-config-prettier-1.17.0.tgz#946ed6117f98f3659a65848279156d87628c33dc"
-=======
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/tslint-config-prettier/-/tslint-config-prettier-1.17.0.tgz#946ed6117f98f3659a65848279156d87628c33dc"
-  integrity sha1-lG7WEX+Y82WaZYSCeRVth2KMM9w=
->>>>>>> Stashed changes
 
-tslint-react@3.6.0, tslint-react@^3.6.0:
+tslint-react@3.6.0:
   version "3.6.0"
-<<<<<<< Updated upstream
-  resolved "https://registry.yarnpkg.com/tslint-react/-/tslint-react-3.6.0.tgz#7f462c95c4a0afaae82507f06517ff02942196a1"
-=======
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/tslint-react/-/tslint-react-3.6.0.tgz#7f462c95c4a0afaae82507f06517ff02942196a1"
-  integrity sha1-f0YslcSgr6roJQfwZRf/ApQhlqE=
->>>>>>> Stashed changes
   dependencies:
     tsutils "^2.13.1"
 
-tslint@5.12.0, tslint@^5.12.0:
+tslint@5.12.0:
   version "5.12.0"
-<<<<<<< Updated upstream
-  resolved "https://registry.yarnpkg.com/tslint/-/tslint-5.12.0.tgz#47f2dba291ed3d580752d109866fb640768fca36"
-=======
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/tslint/-/tslint-5.12.0.tgz#47f2dba291ed3d580752d109866fb640768fca36"
-  integrity sha1-R/LbopHtPVgHUtEJhm+2QHaPyjY=
->>>>>>> Stashed changes
   dependencies:
     babel-code-frame "^6.22.0"
     builtin-modules "^1.1.1"
@@ -9439,14 +9182,9 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
 
-typescript@3.2.2, typescript@^3.2.2:
+typescript@3.2.2:
   version "3.2.2"
-<<<<<<< Updated upstream
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.2.2.tgz#fe8101c46aa123f8353523ebdcf5730c2ae493e5"
-=======
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/typescript/-/typescript-3.2.2.tgz#fe8101c46aa123f8353523ebdcf5730c2ae493e5"
-  integrity sha1-/oEBxGqhI/g1NSPr3PVzDCrkk+U=
->>>>>>> Stashed changes
 
 ua-parser-js@^0.7.18:
   version "0.7.19"
@@ -9854,16 +9592,9 @@ webpack-chain@^5.0.1:
     deepmerge "^1.5.2"
     javascript-stringify "^1.6.0"
 
-<<<<<<< Updated upstream
 webpack-cli@3.2.1:
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/webpack-cli/-/webpack-cli-3.2.1.tgz#779c696c82482491f0803907508db2e276ed3b61"
-=======
-webpack-cli@3.2.0:
-  version "3.2.0"
-  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/webpack-cli/-/webpack-cli-3.2.0.tgz#9648cb6d65060f916e63c3d3b55387fb94c019fd"
-  integrity sha1-lkjLbWUGD5FuY8PTtVOH+5TAGf0=
->>>>>>> Stashed changes
   dependencies:
     chalk "^2.4.1"
     cross-spawn "^6.0.5"
@@ -9890,12 +9621,7 @@ webpack-dev-middleware@3.4.0:
 
 webpack-dev-server@3.1.14, webpack-dev-server@^3.1.14:
   version "3.1.14"
-<<<<<<< Updated upstream
-  resolved "https://registry.yarnpkg.com/webpack-dev-server/-/webpack-dev-server-3.1.14.tgz#60fb229b997fc5a0a1fc6237421030180959d469"
-=======
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/webpack-dev-server/-/webpack-dev-server-3.1.14.tgz#60fb229b997fc5a0a1fc6237421030180959d469"
-  integrity sha1-YPsim5l/xaCh/GI3QhAwGAlZ1Gk=
->>>>>>> Stashed changes
   dependencies:
     ansi-html "0.0.7"
     bonjour "^3.5.0"
