@@ -1,7 +1,6 @@
 import React from 'react';
-import { hot } from 'react-hot-loader';
-import Button from '@gql-gateway/components/Button';
-import Header from '@gql-gateway/components/Header';
+import { hot } from 'react-hot-loader/root';
+import { Button, Header } from '@gql-gateway/components';
 
 const App: React.FunctionComponent<{}> = () => {
   const [state, setState] = React.useState(0);
@@ -15,4 +14,4 @@ const App: React.FunctionComponent<{}> = () => {
   );
 };
 
-export default hot(module)(App);
+export default hot(App);

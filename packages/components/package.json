@@ -2,6 +2,7 @@
   "name": "@gql-gateway/components",
   "version": "1.0.0",
   "license": "MIT",
+  "main": "src/index.ts",
   "scripts": {
     "dev": "docz dev --typescript",
     "build": "docz build --typescript"

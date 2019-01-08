@@ -1,10 +1,14 @@
 {
   "name": "root",
   "private": true,
-  "devDependencies": {
-    "lerna": "3.8.5"
-  },
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "resolutions": {
+    "**/react": "16.7.0-alpha.2",
+    "**/react-dom": "16.7.0-alpha.2"
+  },
+  "devDependencies": {
+    "lerna": "3.8.5"
+  }
 }
