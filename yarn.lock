@@ -765,7 +765,7 @@
   version "3.0.0"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@hutson/parse-repository-url/-/parse-repository-url-3.0.0.tgz#3fa172e3006f36e547fb49835bf25fc487a29f1c"
 
-"@lerna/add@^3.8.5":
+"@lerna/add@^3.9.0":
   version "3.9.0"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@lerna/add/-/add-3.9.0.tgz#cc6bacfdc549e914bf52ea6a7adfe2d9bcd67cfe"
   integrity sha1-zGus/cVJ6RS/Uupqet/i2bzWfP4=
@@ -788,7 +788,7 @@
     "@lerna/validation-error" "^3.6.0"
     libnpm "^2.0.1"
 
-"@lerna/bootstrap@^3.8.5", "@lerna/bootstrap@^3.9.0":
+"@lerna/bootstrap@^3.9.0":
   version "3.9.0"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@lerna/bootstrap/-/bootstrap-3.9.0.tgz#c21ad5a8bba09a71f0977e7d13b1ef420272630b"
   integrity sha1-whrVqLugmnHwl359E7HvQgJyYws=
@@ -817,7 +817,7 @@
     read-package-tree "^5.1.6"
     semver "^5.5.0"
 
-"@lerna/changed@^3.8.5":
+"@lerna/changed@^3.9.0":
   version "3.9.0"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@lerna/changed/-/changed-3.9.0.tgz#0cbe176dd41d90f25606622131ee14004e307dd4"
   integrity sha1-DL4XbdQdkPJWBmIhMe4UAE4wfdQ=
@@ -844,7 +844,7 @@
     execa "^1.0.0"
     strong-log-transformer "^2.0.0"
 
-"@lerna/clean@^3.8.5":
+"@lerna/clean@^3.9.0":
   version "3.9.0"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@lerna/clean/-/clean-3.9.0.tgz#8c59a70202fbdfa18349c33dd08c7adf95cc7957"
   integrity sha1-jFmnAgL736GDScM90Ix635XMeVc=
@@ -953,7 +953,7 @@
     "@lerna/validation-error" "^3.6.0"
     libnpm "^2.0.1"
 
-"@lerna/exec@^3.8.5":
+"@lerna/exec@^3.9.0":
   version "3.9.0"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@lerna/exec/-/exec-3.9.0.tgz#f6f4ea913ef1d708706affa02514daa359d23010"
   integrity sha1-9vTqkT7x1whwav+gJRTao1nSMBA=
@@ -1040,7 +1040,7 @@
     p-map "^1.2.0"
     slash "^1.0.0"
 
-"@lerna/list@^3.8.5":
+"@lerna/list@^3.9.0":
   version "3.9.0"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@lerna/list/-/list-3.9.0.tgz#5b73e05baf62087523449e09f6bf71810195ff64"
   integrity sha1-W3PgW69iCHUjRJ4J9r9xgQGV/2Q=
@@ -1170,7 +1170,7 @@
     inquirer "^6.2.0"
     libnpm "^2.0.1"
 
-"@lerna/publish@^3.8.5":
+"@lerna/publish@^3.9.0":
   version "3.9.0"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@lerna/publish/-/publish-3.9.0.tgz#c58bb307f1f3684c5ddfbe639a2064fdc3a42289"
   integrity sha1-xYuzB/HzaExd375jmiBk/cOkIok=
@@ -1241,7 +1241,7 @@
     p-map "^1.2.0"
     p-map-series "^1.0.0"
 
-"@lerna/run@^3.8.5":
+"@lerna/run@^3.9.0":
   version "3.9.0"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@lerna/run/-/run-3.9.0.tgz#79119e49a48a6a7418b23029fb2cf523625ce8b1"
   integrity sha1-eRGeSaSKanQYsjAp+yz1I2Jc6LE=
@@ -1287,7 +1287,7 @@
   dependencies:
     libnpm "^2.0.1"
 
-"@lerna/version@^3.8.5", "@lerna/version@^3.9.0":
+"@lerna/version@^3.9.0":
   version "3.9.0"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@lerna/version/-/version-3.9.0.tgz#8b3295642eeddebeec6861ecf0c4b375cee3ffba"
   integrity sha1-izKVZC7t3r7saGHs8MSzdc7j/7o=
@@ -5779,26 +5779,26 @@ lcid@^2.0.0:
   dependencies:
     invert-kv "^2.0.0"
 
-lerna@3.8.5:
-  version "3.8.5"
-  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/lerna/-/lerna-3.8.5.tgz#30001989ccd44dca631c1a77eb4ec1238c4a6dfc"
-  integrity sha1-MAAZiczUTcpjHBp3607BI4xKbfw=
+lerna@3.9.0:
+  version "3.9.0"
+  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/lerna/-/lerna-3.9.0.tgz#19e0f5fb824167e696c14fcc7abd66ddeec64daa"
+  integrity sha1-GeD1+4JBZ+aWwU/Mer1m3e7GTao=
   dependencies:
-    "@lerna/add" "^3.8.5"
-    "@lerna/bootstrap" "^3.8.5"
-    "@lerna/changed" "^3.8.5"
-    "@lerna/clean" "^3.8.5"
+    "@lerna/add" "^3.9.0"
+    "@lerna/bootstrap" "^3.9.0"
+    "@lerna/changed" "^3.9.0"
+    "@lerna/clean" "^3.9.0"
     "@lerna/cli" "^3.6.0"
     "@lerna/create" "^3.8.5"
     "@lerna/diff" "^3.8.5"
-    "@lerna/exec" "^3.8.5"
+    "@lerna/exec" "^3.9.0"
     "@lerna/import" "^3.8.5"
     "@lerna/init" "^3.8.5"
     "@lerna/link" "^3.8.5"
-    "@lerna/list" "^3.8.5"
-    "@lerna/publish" "^3.8.5"
-    "@lerna/run" "^3.8.5"
-    "@lerna/version" "^3.8.5"
+    "@lerna/list" "^3.9.0"
+    "@lerna/publish" "^3.9.0"
+    "@lerna/run" "^3.9.0"
+    "@lerna/version" "^3.9.0"
     import-local "^1.0.0"
     libnpm "^2.0.1"
 
@@ -7680,7 +7680,7 @@ react-feather@^1.1.5:
   version "1.1.5"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/react-feather/-/react-feather-1.1.5.tgz#f7f9384c17d2d061b5b8298f46efc0e497f48469"
 
-react-hot-loader@^4.6.3:
+react-hot-loader@4.6.3, react-hot-loader@^4.6.3:
   version "4.6.3"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/react-hot-loader/-/react-hot-loader-4.6.3.tgz#d9c8923c45b35fd51538ba4297081a00be6bccb1"
   integrity sha1-2ciSPEWzX9UVOLpClwgaAL5rzLE=
