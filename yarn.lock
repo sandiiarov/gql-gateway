@@ -8033,7 +8033,7 @@ react-docgen@^3.0.0-rc.1:
     node-dir "^0.1.10"
     recast "^0.16.0"
 
-react-dom@16.8.0-alpha.0, react-dom@^16.7.0:
+react-dom@16.8.0-alpha.0, react-dom@16.8.0-alpha.1, react-dom@^16.7.0:
   version "16.8.0-alpha.0"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/react-dom/-/react-dom-16.8.0-alpha.0.tgz#47bbcf42593eab5468b577d3c3f3c27f251a65ef"
   dependencies:
@@ -8138,7 +8138,7 @@ react-sizes@^1.0.4:
     lodash.throttle "^4.1.1"
     prop-types "^15.6.0"
 
-react@16.8.0-alpha.0, react@^16.7.0:
+react@16.8.0-alpha.0, react@16.8.0-alpha.1, react@^16.7.0:
   version "16.8.0-alpha.0"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/react/-/react-16.8.0-alpha.0.tgz#8545eb79534cce5ba99ed40085f7f955e8857a19"
   dependencies:
