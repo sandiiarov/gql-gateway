@@ -1,5 +1,5 @@
 {
-  "name": "@gql-gateway/graphql-user",
+  "name": "@gql-gateway/graphql-post",
   "version": "1.0.0",
   "license": "MIT",
   "main": "index.ts",
@@ -9,8 +9,7 @@
   "dependencies": {
     "apollo-server": "2.3.1",
     "graphql": "14.0.2",
-    "graphql-import": "0.7.1",
-    "node-fetch": "^2.3.0"
+    "graphql-import": "0.7.1"
   },
   "devDependencies": {
     "@types/node-fetch": "^2.1.4",

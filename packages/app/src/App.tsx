@@ -1,8 +1,8 @@
-import React from 'react';
+import * as React from 'react';
 import { hot } from 'react-hot-loader/root';
 import { Button, Header } from '@gql-gateway/components';
 
-const App: React.FunctionComponent<{}> = () => {
+const App = () => {
   const [state, setState] = React.useState(0);
 
   return (

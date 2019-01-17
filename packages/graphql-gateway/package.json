@@ -1,5 +1,5 @@
 {
-  "name": "@gql-gateway/graphql-user",
+  "name": "@gql-gateway/graphql-gateway",
   "version": "1.0.0",
   "license": "MIT",
   "main": "index.ts",
@@ -7,10 +7,10 @@
     "start": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts"
   },
   "dependencies": {
+    "apollo-link-http": "^1.5.9",
     "apollo-server": "2.3.1",
     "graphql": "14.0.2",
-    "graphql-import": "0.7.1",
-    "node-fetch": "^2.3.0"
+    "graphql-tools": "^4.0.3"
   },
   "devDependencies": {
     "@types/node-fetch": "^2.1.4",

@@ -8,15 +8,18 @@
     "build": "docz build --typescript"
   },
   "dependencies": {
-    "react": "16.7.0-alpha.2",
-    "react-dom": "16.7.0-alpha.2"
+    "react": "16.8.0-alpha.0",
+    "react-dom": "16.8.0-alpha.0"
   },
   "devDependencies": {
     "docz": "0.13.7",
     "docz-theme-default": "0.13.7",
-    "tslint": "5.12.0",
-    "tslint-config-prettier": "1.17.0",
-    "tslint-react": "3.6.0",
+    "eslint": "5.12.0",
+    "eslint-config-prettier": "3.4.0",
+    "eslint-plugin-jsx-a11y": "6.1.2",
+    "eslint-plugin-prettier": "3.0.1",
+    "eslint-plugin-react": "7.12.3",
+    "eslint-plugin-typescript": "1.0.0-rc.3",
     "typescript": "3.2.2"
   }
 }

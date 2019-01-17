@@ -1,4 +1,10 @@
+type User {
+  id: ID!
+  name: String!
+  username: String!
+  email: String!
+}
+
 type Query {
-  "A simple type for getting started!"
-  hello: String
+  user(id: ID!): User!
 }

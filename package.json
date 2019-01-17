@@ -5,8 +5,8 @@
     "packages/*"
   ],
   "resolutions": {
-    "**/react": "16.7.0-alpha.2",
-    "**/react-dom": "16.7.0-alpha.2"
+    "**/react": "16.8.0-alpha.0",
+    "**/react-dom": "16.8.0-alpha.0"
   },
   "devDependencies": {
     "lerna": "3.10.2"
