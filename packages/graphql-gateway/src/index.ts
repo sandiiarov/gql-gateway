@@ -1,5 +1,9 @@
-import { ApolloServer, mergeSchemas } from 'apollo-server';
+import * as express from 'express';
+import { ApolloEngine } from 'apollo-engine';
+import { ApolloServer, mergeSchemas } from 'apollo-server-express';
 import { getSchemas } from './getSchemas';
+
+const app = express();
 
 const linkTypeDefs = `
   extend type User {
@@ -35,8 +39,21 @@ const linkTypeDefs = `
       },
     },
   });
-  const server = new ApolloServer({ schema });
-  const { url } = await server.listen({ port: 4000 });
 
-  console.log(`🚀  Server ready at ${url}`);
+  const server = new ApolloServer({
+    schema,
+    tracing: true,
+    cacheControl: true,
+    engine: false,
+  });
+
+  server.applyMiddleware({ app });
+
+  const engine = new ApolloEngine({
+    apiKey: 'service:sandiiarov-7698:rv3UnQr4OVxC35oJ5pYCMw',
+  });
+
+  await engine.listen({ port: 4000, expressApp: app });
+
+  console.log(`🚀  Server ready`);
 })();
