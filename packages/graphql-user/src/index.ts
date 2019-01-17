@@ -1,14 +1,21 @@
-import { ApolloServer } from 'apollo-server';
-import { importSchema } from 'graphql-import';
-import { db } from './db';
+import './env';
+import * as express from 'express';
+import { ApolloServer } from 'apollo-server-express';
+import { typeDefs } from './typeDefs';
 import { resolvers } from './resolvers';
+import { db } from './db';
+
+const { PORT = 4001 } = process.env;
+const app = express();
 
 const server = new ApolloServer({
-  typeDefs: importSchema('./src/schema.graphql'),
+  typeDefs,
   resolvers,
   context: () => ({ db }),
 });
 
-server.listen({ port: 4001 }).then(({ url }) => {
-  console.log(`🚀 Server ready at ${url}`);
-});
+server.applyMiddleware({ app });
+
+app.listen(PORT, () => console.log(`__RUNNING__ @ ${PORT}`));
+
+export default app;

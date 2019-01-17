@@ -1678,6 +1678,11 @@
   dependencies:
     "@types/node" "*"
 
+"@types/async@2.0.50":
+  version "2.0.50"
+  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@types/async/-/async-2.0.50.tgz#117540e026d64e1846093abbd5adc7e27fda7bcb"
+  integrity sha1-EXVA4CbWThhGCTq71a3H4n/ae8s=
+
 "@types/body-parser@*", "@types/body-parser@1.17.0":
   version "1.17.0"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@types/body-parser/-/body-parser-1.17.0.tgz#9f5c9d9bd04bb54be32d5eb9fc0d8c974e6cf58c"
@@ -1716,6 +1721,13 @@
   integrity sha512-ipZjBVsm2tF/n8qFGOuGBkUij9X9ZswVi9G3bx/6dz7POpVa6gVHcj1wsX/LVEn9MMF41fxK/PnZPPoTD1UFPw==
   dependencies:
     "@types/express" "*"
+
+"@types/dotenv@^6.1.0":
+  version "6.1.0"
+  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@types/dotenv/-/dotenv-6.1.0.tgz#fba2bfd1f28a46eadaa049f3313ebb89bdedfc53"
+  integrity sha1-+6K/0fKKRuraoEnzMT67ib3t/FM=
+  dependencies:
+    "@types/node" "*"
 
 "@types/events@*":
   version "1.2.0"
@@ -1894,6 +1906,11 @@
   dependencies:
     "@types/events" "*"
     "@types/node" "*"
+
+"@types/zen-observable@^0.8.0":
+  version "0.8.0"
+  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@types/zen-observable/-/zen-observable-0.8.0.tgz#8b63ab7f1aa5321248aad5ac890a485656dcea4d"
+  integrity sha1-i2OrfxqlMhJIqtWsiQpIVlbc6k0=
 
 "@webassemblyjs/ast@1.7.11":
   version "1.7.11"
@@ -2216,6 +2233,20 @@ anymatch@^2.0.0:
     micromatch "^3.1.4"
     normalize-path "^2.1.1"
 
+apollo-boost@0.1.23:
+  version "0.1.23"
+  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/apollo-boost/-/apollo-boost-0.1.23.tgz#9a9b806cfdc1d29b0b09b1ef0a15fde2e71c92bd"
+  integrity sha1-mpuAbP3B0psLCbHvChX94ucckr0=
+  dependencies:
+    apollo-cache "^1.1.22"
+    apollo-cache-inmemory "^1.3.12"
+    apollo-client "^2.4.8"
+    apollo-link "^1.0.6"
+    apollo-link-error "^1.0.3"
+    apollo-link-http "^1.3.1"
+    apollo-link-state "^0.4.0"
+    graphql-tag "^2.4.2"
+
 apollo-cache-control@0.4.0:
   version "0.4.0"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/apollo-cache-control/-/apollo-cache-control-0.4.0.tgz#fec343e6ec95aa4f1b88e07e62f067bee0c48397"
@@ -2223,6 +2254,37 @@ apollo-cache-control@0.4.0:
   dependencies:
     apollo-server-env "2.2.0"
     graphql-extensions "0.4.0"
+
+apollo-cache-inmemory@^1.3.12:
+  version "1.3.12"
+  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/apollo-cache-inmemory/-/apollo-cache-inmemory-1.3.12.tgz#cf7ef7c15730d0b6787d79047d5c06087ac31991"
+  integrity sha1-z373wVcw0LZ4fXkEfVwGCHrDGZE=
+  dependencies:
+    apollo-cache "^1.1.22"
+    apollo-utilities "^1.0.27"
+    optimism "^0.6.8"
+
+apollo-cache@1.1.22, apollo-cache@^1.1.22:
+  version "1.1.22"
+  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/apollo-cache/-/apollo-cache-1.1.22.tgz#d4682ea6e8b2508a934f61c2fd9e36b4a65041d9"
+  integrity sha1-1GgupuiyUIqTT2HC/Z42tKZQQdk=
+  dependencies:
+    apollo-utilities "^1.0.27"
+
+apollo-client@^2.4.8:
+  version "2.4.8"
+  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/apollo-client/-/apollo-client-2.4.8.tgz#3a798f1076243465a59061d44d11bd030b68deb9"
+  integrity sha1-OnmPEHYkNGWlkGHUTRG9Awto3rk=
+  dependencies:
+    "@types/zen-observable" "^0.8.0"
+    apollo-cache "1.1.22"
+    apollo-link "^1.0.0"
+    apollo-link-dedup "^1.0.0"
+    apollo-utilities "1.0.27"
+    symbol-observable "^1.0.2"
+    zen-observable "^0.8.0"
+  optionalDependencies:
+    "@types/async" "2.0.50"
 
 apollo-datasource@0.2.1:
   version "0.2.1"
@@ -2289,6 +2351,21 @@ apollo-env@0.2.5:
     core-js "^3.0.0-beta.3"
     node-fetch "^2.2.0"
 
+apollo-link-dedup@^1.0.0:
+  version "1.0.13"
+  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/apollo-link-dedup/-/apollo-link-dedup-1.0.13.tgz#bb22957e18b6125ae8bfb46cab6bda8d33ba8046"
+  integrity sha1-uyKVfhi2Elrov7Rsq2vajTO6gEY=
+  dependencies:
+    apollo-link "^1.2.6"
+
+apollo-link-error@^1.0.3:
+  version "1.1.5"
+  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/apollo-link-error/-/apollo-link-error-1.1.5.tgz#1d600dfa75c4e4bf017f50d60da7b375b53047ab"
+  integrity sha1-HWAN+nXE5L8Bf1DWDaezdbUwR6s=
+  dependencies:
+    apollo-link "^1.2.6"
+    apollo-link-http-common "^0.2.8"
+
 apollo-link-http-common@^0.2.8:
   version "0.2.8"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/apollo-link-http-common/-/apollo-link-http-common-0.2.8.tgz#c6deedfc2739db8b11013c3c2d2ccd657152941f"
@@ -2296,7 +2373,7 @@ apollo-link-http-common@^0.2.8:
   dependencies:
     apollo-link "^1.2.6"
 
-apollo-link-http@1.5.9:
+apollo-link-http@1.5.9, apollo-link-http@^1.3.1:
   version "1.5.9"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/apollo-link-http/-/apollo-link-http-1.5.9.tgz#9046f5640a94c8a8b508a39e0f2c628b781baecc"
   integrity sha1-kEb1ZAqUyKi1CKOeDyxii3gbrsw=
@@ -2304,7 +2381,15 @@ apollo-link-http@1.5.9:
     apollo-link "^1.2.6"
     apollo-link-http-common "^0.2.8"
 
-apollo-link@^1.2.3, apollo-link@^1.2.6:
+apollo-link-state@^0.4.0:
+  version "0.4.2"
+  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/apollo-link-state/-/apollo-link-state-0.4.2.tgz#ac00e9be9b0ca89eae0be6ba31fe904b80bbe2e8"
+  integrity sha1-rADpvpsMqJ6uC+a6Mf6QS4C74ug=
+  dependencies:
+    apollo-utilities "^1.0.8"
+    graphql-anywhere "^4.1.0-alpha.0"
+
+apollo-link@^1.0.0, apollo-link@^1.0.6, apollo-link@^1.2.3, apollo-link@^1.2.6:
   version "1.2.6"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/apollo-link/-/apollo-link-1.2.6.tgz#d9b5676d79c01eb4e424b95c7171697f6ad2b8da"
   integrity sha512-sUNlA20nqIF3gG3F8eyMD+mO80fmf3dPZX+GUOs3MI9oZR8ug09H3F0UsWJMcpEg6h55Yy5wZ+BMmAjrbenF/Q==
@@ -2400,7 +2485,7 @@ apollo-tracing@0.4.0:
     apollo-server-env "2.2.0"
     graphql-extensions "0.4.0"
 
-apollo-utilities@^1.0.0, apollo-utilities@^1.0.1:
+apollo-utilities@1.0.27, apollo-utilities@^1.0.0, apollo-utilities@^1.0.1, apollo-utilities@^1.0.27, apollo-utilities@^1.0.8:
   version "1.0.27"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/apollo-utilities/-/apollo-utilities-1.0.27.tgz#77c550f9086552376eca3a48e234a1466b5b057e"
   integrity sha512-nzrMQ89JMpNmYnVGJ4t8zN75gQbql27UDhlxNi+3OModp0Masx5g+fQmQJ5B4w2dpRuYOsdwFLmj3lQbwOKV1Q==
@@ -4667,7 +4752,7 @@ dot-prop@^4.1.0, dot-prop@^4.2.0:
 dotenv@^6.2.0:
   version "6.2.0"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/dotenv/-/dotenv-6.2.0.tgz#941c0410535d942c8becf28d3f357dbd9d476064"
-  integrity sha512-HygQCKUBSFl8wKQZBSemMywRWcEDNidvNbjGVyZu3nbZ8qq9ubiPoGLMdRDpfSrpkkm9BXYFkpKxxFX38o/76w==
+  integrity sha1-lBwEEFNdlCyL7PKNPzV9vZ1HYGQ=
 
 duplexer3@^0.1.4:
   version "0.1.4"
@@ -5857,6 +5942,13 @@ graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.2, graceful-fs@^4.1.6
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/graceful-fs/-/graceful-fs-4.1.15.tgz#ffb703e1066e8a0eeaa4c8b80ba9253eeefbfb00"
   integrity sha512-6uHUhOPEBgQ24HM+r6b/QwWfZq+yiFcipKFrOFiBEnWdy5sdzYoi+pJeQaPI5qOLRFqWmAXUPQNsielzdLoecA==
 
+graphql-anywhere@^4.1.0-alpha.0:
+  version "4.1.24"
+  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/graphql-anywhere/-/graphql-anywhere-4.1.24.tgz#59e2a8bfd3d00ac75f6a377e31e4e9fdaa5ce786"
+  integrity sha1-WeKov9PQCsdfajd+MeTp/apc54Y=
+  dependencies:
+    apollo-utilities "^1.0.27"
+
 graphql-extensions@0.4.0:
   version "0.4.0"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/graphql-extensions/-/graphql-extensions-0.4.0.tgz#5857c7b7b9f20dbccbfd88730fffa5963b3c61ee"
@@ -5885,6 +5977,11 @@ graphql-subscriptions@^1.0.0:
   integrity sha512-+ytmryoHF1LVf58NKEaNPRUzYyXplm120ntxfPcgOBC7TnK7Tv/4VRHeh4FAR9iL+O1bqhZs4nkibxQ+OA5cDQ==
   dependencies:
     iterall "^1.2.1"
+
+graphql-tag@^2.4.2:
+  version "2.10.1"
+  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/graphql-tag/-/graphql-tag-2.10.1.tgz#10aa41f1cd8fae5373eaf11f1f67260a3cad5e02"
+  integrity sha1-EKpB8c2PrlNz6vEfH2cmCjytXgI=
 
 graphql-tag@^2.9.2:
   version "2.10.0"
@@ -6353,6 +6450,11 @@ immer@1.7.2:
   version "1.7.2"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/immer/-/immer-1.7.2.tgz#a51e9723c50b27e132f6566facbec1c85fc69547"
   integrity sha512-4Urocwu9+XLDJw4Tc6ZCg7APVjjLInCFvO4TwGsAYV5zT6YYSor14dsZR0+0tHlDIN92cFUOq+i7fC00G5vTxA==
+
+immutable-tuple@^0.4.9:
+  version "0.4.9"
+  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/immutable-tuple/-/immutable-tuple-0.4.9.tgz#473ebdd6c169c461913a454bf87ef8f601a20ff0"
+  integrity sha1-Rz691sFpxGGROkVL+H749gGiD/A=
 
 import-fresh@^2.0.0:
   version "2.0.0"
@@ -8457,6 +8559,13 @@ opn@5.4.0, opn@^5.1.0:
   dependencies:
     is-wsl "^1.1.0"
 
+optimism@^0.6.8:
+  version "0.6.8"
+  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/optimism/-/optimism-0.6.8.tgz#0780b546da8cd0a72e5207e0c3706c990c8673a6"
+  integrity sha1-B4C1RtqM0KcuUgfgw3BsmQyGc6Y=
+  dependencies:
+    immutable-tuple "^0.4.9"
+
 optimist@^0.6.1:
   version "0.6.1"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/optimist/-/optimist-0.6.1.tgz#da3ea74686fa21a19a111c326e90eb15a0196686"
@@ -9290,6 +9399,13 @@ re-resizable@^4.11.0:
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/re-resizable/-/re-resizable-4.11.0.tgz#d5df10bda445c4ec0945751a223bf195afb61890"
   integrity sha512-dye+7rERqNf/6mDT1iwps+4Gf42420xuZgygF33uX178DxffqcyeuHbBuJ382FIcB5iP6mMZOhfW7kI0uXwb/Q==
 
+react-apollo-hooks@0.3.0:
+  version "0.3.0"
+  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/react-apollo-hooks/-/react-apollo-hooks-0.3.0.tgz#3a0f0e73f2ef0905ad3589b9fb227693282edd3d"
+  integrity sha1-Og8Oc/LvCQWtNYm5+yJ2kygu3T0=
+  dependencies:
+    lodash "^4.17.11"
+
 react-codemirror2@^5.1.0:
   version "5.1.0"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/react-codemirror2/-/react-codemirror2-5.1.0.tgz#62de4460178adea40eb52eabf7491669bf3794b8"
@@ -9352,7 +9468,7 @@ react-docgen@^3.0.0-rc.1:
     node-dir "^0.1.10"
     recast "^0.16.0"
 
-react-dom@16.8.0-alpha.1, react-dom@^16.7.0:
+react-dom@16.8.0-alpha.1:
   version "16.8.0-alpha.1"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/react-dom/-/react-dom-16.8.0-alpha.1.tgz#dab73b8354ba2e498e3127d18e29d4546cea889e"
   integrity sha1-2rc7g1S6LkmOMSfRjinUVGzqiJ4=
@@ -9361,6 +9477,16 @@ react-dom@16.8.0-alpha.1, react-dom@^16.7.0:
     object-assign "^4.1.1"
     prop-types "^15.6.2"
     scheduler "^0.13.0-alpha.1"
+
+react-dom@^16.7.0:
+  version "16.7.0"
+  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/react-dom/-/react-dom-16.7.0.tgz#a17b2a7ca89ee7390bc1ed5eb81783c7461748b8"
+  integrity sha1-oXsqfKie5zkLwe1euBeDx0YXSLg=
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+    prop-types "^15.6.2"
+    scheduler "^0.12.0"
 
 react-error-overlay@^5.1.2:
   version "5.1.2"
@@ -9470,7 +9596,7 @@ react-sizes@^1.0.4:
     lodash.throttle "^4.1.1"
     prop-types "^15.6.0"
 
-react@16.8.0-alpha.1, react@^16.7.0:
+react@16.8.0-alpha.1:
   version "16.8.0-alpha.1"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/react/-/react-16.8.0-alpha.1.tgz#c2b32689f3b466d3ce85a634dd9035f789d2cd97"
   integrity sha1-wrMmifO0ZtPOhaY03ZA194nSzZc=
@@ -9479,6 +9605,16 @@ react@16.8.0-alpha.1, react@^16.7.0:
     object-assign "^4.1.1"
     prop-types "^15.6.2"
     scheduler "^0.13.0-alpha.1"
+
+react@^16.7.0:
+  version "16.7.0"
+  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/react/-/react-16.7.0.tgz#b674ec396b0a5715873b350446f7ea0802ab6381"
+  integrity sha1-tnTsOWsKVxWHOzUERvfqCAKrY4E=
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+    prop-types "^15.6.2"
+    scheduler "^0.12.0"
 
 read-cmd-shim@^1.0.1:
   version "1.0.1"
@@ -10078,6 +10214,14 @@ scan-directory@^1.0.0:
   version "1.0.0"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/scan-directory/-/scan-directory-1.0.0.tgz#46b6769dbd893d9bd7490ae9dcc43811a38b7fbb"
   integrity sha512-StSp3ahu7EE1oqVfemF9nV7DVusIaVRuZVa4CZX5rzCUwspqO21wWdNshxZuFIQD7zj/HvvglBoycIizZbTBdw==
+
+scheduler@^0.12.0:
+  version "0.12.0"
+  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/scheduler/-/scheduler-0.12.0.tgz#8ab17699939c0aedc5a196a657743c496538647b"
+  integrity sha1-irF2mZOcCu3FoZamV3Q8SWU4ZHs=
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
 
 scheduler@^0.13.0-alpha.1:
   version "0.13.0-alpha.1"
@@ -10834,7 +10978,7 @@ swap-case@^1.1.0:
     lower-case "^1.1.1"
     upper-case "^1.1.1"
 
-symbol-observable@^1.0.4:
+symbol-observable@^1.0.2, symbol-observable@^1.0.4:
   version "1.2.0"
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/symbol-observable/-/symbol-observable-1.2.0.tgz#c22688aed4eab3cdc2dfeacbb561660560a00804"
   integrity sha512-e900nM8RRtGhlV36KGEU9k65K3mPb1WV70OdjfxlG2EAuM1noi/E/BaW/uMhL7bPEssK8QV57vN3esixjUvcXQ==

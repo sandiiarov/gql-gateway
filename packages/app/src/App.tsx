@@ -1,17 +1,15 @@
 import * as React from 'react';
 import { hot } from 'react-hot-loader/root';
-import { Button, Header } from '@gql-gateway/components';
+import ApolloClient from 'apollo-boost';
+import { ApolloProvider } from 'react-apollo-hooks';
+import User from './User';
 
-const App = () => {
-  const [state, setState] = React.useState(0);
+const client = new ApolloClient({ uri: 'http://localhost:4000/graphql' });
 
-  return (
-    <>
-      <Header>{state}</Header>
-      <Button onClick={() => setState(state + 1)}>+</Button>
-      <Button onClick={() => setState(state - 1)}>-</Button>
-    </>
-  );
-};
+const App = () => (
+  <ApolloProvider client={client}>
+    <User />
+  </ApolloProvider>
+);
 
 export default hot(App);
