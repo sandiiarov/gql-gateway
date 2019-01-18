@@ -7,7 +7,7 @@ const app = express();
 
 const linkTypeDefs = `
   extend type User {
-    posts: [Post]
+    posts: [String]
   }
 `;
 
