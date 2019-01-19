@@ -2,7 +2,7 @@ language: node_js
 node_js:
   - 'stable'
 install:
-  - npx lerna bootsrap
+  - npx lerna bootstrap
 before_script:
   - yarn start
 script:
