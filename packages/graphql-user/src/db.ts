@@ -2,8 +2,6 @@ import fetch from 'node-fetch';
 
 export interface User {
   id: string;
-  name: string;
-  email: string;
 }
 
 export interface DB {
