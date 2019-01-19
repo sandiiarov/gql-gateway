@@ -1,7 +1,0 @@
-{
-  "version": 2,
-  "env": ["API"],
-  "alias": "gql-gateway-graphql-user",
-  "builds": [{ "src": "src/*", "use": "@now/node@canary" }],
-  "routes": [{ "src": "/(.*)", "dest": "src/index.ts" }]
-}
