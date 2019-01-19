@@ -5,8 +5,8 @@ const script = process.env.NODE_ENV === 'production' ? 'start' : 'dev';
 
 const bootstrap = async () => {
   run({ scope: '@gql-gateway/graphql-user', script });
-  await waitPort({ host: 'localhost', port: 4001 });
   run({ scope: '@gql-gateway/graphql-post', script });
+  await waitPort({ host: 'localhost', port: 4001 });
   await waitPort({ host: 'localhost', port: 4002 });
   run({ scope: '@gql-gateway/graphql-gateway', script });
 

@@ -12,6 +12,7 @@ const server = new ApolloServer({
   typeDefs,
   resolvers,
   context: () => ({ db }),
+  introspection: true,
 });
 
 server.applyMiddleware({ app });
