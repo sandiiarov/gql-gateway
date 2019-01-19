@@ -4,6 +4,6 @@ node_js:
 install:
   - yarn
 before_script:
-  - yarn start
+  - yarn start &
 script:
   - npx apollo service:check
