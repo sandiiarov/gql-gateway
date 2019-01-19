@@ -1,11 +1,18 @@
-const runAll = require('npm-run-all');
+const run = require('@lerna/run');
 const waitPort = require('wait-port');
 
+const script = process.env.NODE_ENV === 'production' ? 'start' : 'dev';
+
 const bootstrap = async () => {
-  runAll(['user', 'post'], { parallel: true });
+  run({ scope: '@gql-gateway/graphql-user', script });
   await waitPort({ host: 'localhost', port: 4001 });
+  run({ scope: '@gql-gateway/graphql-post', script });
   await waitPort({ host: 'localhost', port: 4002 });
-  runAll(['gateway']);
+  run({ scope: '@gql-gateway/graphql-gateway', script });
+
+  if (process.env.NODE_ENV === 'development') {
+    run({ scope: '@gql-gateway/app', script: 'start' });
+  }
 };
 
 bootstrap();
