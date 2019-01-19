@@ -1,5 +1,8 @@
 module.exports = {
   client: {
-    service: 'sandiiarov-7698',
+    service: {
+      url: 'http://localhost:4000/graphql',
+    },
+    includes: ['packages/app/**/*.{ts,tsx}'],
   },
 };
