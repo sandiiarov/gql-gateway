@@ -15,9 +15,9 @@
     "apollo-link-http": "^1.5.9",
     "graphql": "^14.1.1",
     "graphql-tag": "^2.10.1",
-    "react": "16.7.0-alpha.2",
+    "react": "16.7.0",
     "react-apollo-hooks": "0.3.0",
-    "react-dom": "16.7.0-alpha.2"
+    "react-dom": "16.7.0"
   },
   "devDependencies": {
     "@babel/core": "7.2.2",

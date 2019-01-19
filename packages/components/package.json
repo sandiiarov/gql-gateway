@@ -8,8 +8,8 @@
     "build": "docz build --typescript"
   },
   "dependencies": {
-    "react": "16.7.0-alpha.2",
-    "react-dom": "16.7.0-alpha.2"
+    "react": "16.7.0",
+    "react-dom": "16.7.0"
   },
   "devDependencies": {
     "@types/react": "16.7.20",
