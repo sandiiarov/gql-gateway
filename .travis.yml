@@ -1,0 +1,9 @@
+language: node_js
+node_js:
+  - 'stable'
+install:
+  - npx lerna bootsrap
+before_script:
+  - yarn start
+script:
+  - npx apollo service:check
