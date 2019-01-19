@@ -1,3 +1,4 @@
+import './env';
 import Gateway from './gateway';
 
 // const schema = mergeSchemas({
@@ -32,4 +33,4 @@ const gateway = new Gateway({
   },
 });
 
-gateway.listen({ port: 4000 });
+gateway.listen({ port: 4000, apiKey: process.env.ENGINE_API_KEY });

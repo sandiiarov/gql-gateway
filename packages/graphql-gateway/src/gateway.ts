@@ -26,24 +26,14 @@ class Gateway {
     return makeRemoteExecutableSchema({ schema, link });
   }
 
-  public async listen({ port }: any) {
+  public async listen({ port, apiKey }: any) {
     const schemas = await Promise.all(this.endpoints.map(this.getSchema));
     const schema = mergeSchemas({ schemas });
-    const server = new ApolloServer({
-      schema,
-      tracing: true,
-      cacheControl: true,
-      engine: false,
-    });
-
+    const server = new ApolloServer({ schema, engine: false });
     const app = express();
+    const engine = new ApolloEngine({ apiKey });
 
     server.applyMiddleware({ app });
-
-    const engine = new ApolloEngine({
-      apiKey: 'service:sandiiarov-7698:rv3UnQr4OVxC35oJ5pYCMw',
-    });
-
     return engine.listen({ port, expressApp: app });
   }
 }
