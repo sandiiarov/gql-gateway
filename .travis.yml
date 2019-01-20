@@ -5,5 +5,7 @@ install:
   - yarn
 before_script:
   - cd packages/pipelines
+  - yarn graphql:production &
+  - sleep 20
 script:
-  - yarn apollo-engine-check
+  - npx apollo engine:check

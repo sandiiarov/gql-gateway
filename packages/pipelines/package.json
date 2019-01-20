@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "apollo-engine-check": "node apollo-engine-check"
+    "graphql:production": "run-func packages/pipelines/tasks graphql production",
+    "graphql:development": "run-func packages/pipelines/tasks graphql development"
   },
   "devDependencies": {
     "@lerna/run": "3.10.6",
-    "apollo": "2.3.0",
-    "cross-spawn": "6.0.5",
+    "run-func": "1.0.2",
     "wait-port": "0.2.2"
   }
 }
