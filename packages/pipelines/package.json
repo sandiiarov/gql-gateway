@@ -1,0 +1,14 @@
+{
+  "name": "@gql-gateway/pipelines",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "apollo-engine-check": "node apollo-engine-check"
+  },
+  "devDependencies": {
+    "@lerna/run": "3.10.6",
+    "apollo": "2.3.0",
+    "cross-spawn": "6.0.5",
+    "wait-port": "0.2.2"
+  }
+}

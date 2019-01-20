@@ -4,7 +4,6 @@ node_js:
 install:
   - yarn
 before_script:
-  - yarn start &
-  - sleep 30
+  - cd packages/pipelines
 script:
-  - npx apollo service:check
+  - yarn apollo-engine-check

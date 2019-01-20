@@ -4,16 +4,11 @@
   "workspaces": [
     "packages/*"
   ],
-  "scripts": {
-    "start": "NODE_ENV=production node bootstrap.js",
-    "dev": "NODE_ENV=development node bootstrap.js"
-  },
   "resolutions": {
     "**/react": "16.7.0-alpha.2",
     "**/react-dom": "16.7.0-alpha.2"
   },
   "devDependencies": {
-    "lerna": "3.10.2",
-    "wait-port": "0.2.2"
+    "lerna": "3.10.2"
   }
 }
