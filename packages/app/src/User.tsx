@@ -1,7 +1,6 @@
 import * as React from 'react';
-import gql from 'graphql-tag';
+import { gql } from 'apollo-boost';
 import { useQuery } from 'react-apollo-hooks';
-import { Button, Header } from '@gql-gateway/components';
 
 export const GET_USER = gql`
   query GetUser($id: ID!) {
@@ -23,7 +22,7 @@ const User = () => {
   return (
     <div>
       {loading && 'loading'}
-      {!loading && !error && <Header>{data.user.name}</Header>}
+      {!loading && !error && <div>{data.user.name}</div>}
       <input value={id} onChange={event => setId(event.target.value)} />
     </div>
   );
