@@ -1775,7 +1775,7 @@
   dependencies:
     "@types/express" "*"
 
-"@types/dotenv@6.1.0", "@types/dotenv@^6.1.0":
+"@types/dotenv@6.1.0":
   version "6.1.0"
   resolved "https://registry.npmjs.org/@types/dotenv/-/dotenv-6.1.0.tgz#fba2bfd1f28a46eadaa049f3313ebb89bdedfc53"
   integrity sha512-gmbNb7V1LbJQA4MmH0hVFgqY1cyKsa6RvKC1Xrq0WBnZ0JuuvXKciXx/s8dN0LVXCJd8xO6wIaSFSyUIoGph9g==
