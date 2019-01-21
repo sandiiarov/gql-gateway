@@ -5,7 +5,7 @@ import { withStyles, WithStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
-import { GetPostsQuery, GetPostsVariables } from '../types';
+import { GetPosts, GetPostsVariables } from './__generated__/GetPosts';
 
 const GET_POSTS = gql`
   query GetPosts($userId: ID!) {
@@ -30,7 +30,7 @@ interface Props extends WithStyles<typeof styles> {
 }
 
 const Posts: React.FunctionComponent<Props> = ({ classes, userId = '1' }) => {
-  const { data } = useQuery<GetPostsQuery, GetPostsVariables>(GET_POSTS, {
+  const { data } = useQuery<GetPosts, GetPostsVariables>(GET_POSTS, {
     variables: { userId },
     suspend: false,
   });

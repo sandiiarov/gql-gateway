@@ -3,4 +3,4 @@ dist
 *.log
 .DS_Store
 .docz
-packages/app/types.ts
+__generated__

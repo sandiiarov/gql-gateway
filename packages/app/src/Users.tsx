@@ -4,7 +4,7 @@ import { useQuery } from 'react-apollo-hooks';
 import { navigate } from '@reach/router';
 import { withStyles, WithStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
-import { GetUsersQuery } from '../types';
+import { GetUsers } from './__generated__/GetUsers';
 
 const GET_USERS = gql`
   query GetUsers {
@@ -27,7 +27,7 @@ interface Props extends WithStyles<typeof styles> {
 }
 
 const Users: React.FunctionComponent<Props> = ({ classes, userId = '1' }) => {
-  const { data } = useQuery<GetUsersQuery>(GET_USERS, { suspend: false });
+  const { data } = useQuery<GetUsers>(GET_USERS, { suspend: false });
 
   return (
     <div className={classes.root}>
