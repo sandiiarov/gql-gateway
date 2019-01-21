@@ -6,19 +6,29 @@ export interface Post {
   body: string;
 }
 
-export interface DB {
-  findById: (id: string) => Promise<Post>;
-  findByUserId: (id: string) => Promise<Post[]>;
+interface PostArgs {
+  where: { id: string };
 }
 
+interface PostsArgs {
+  where: { userId: string };
+}
+
+export interface DB {
+  post: (args: PostArgs) => Promise<Post>;
+  posts: (args: PostsArgs) => Promise<Post[]>;
+}
+
+const { API } = process.env;
+
 export const db: DB = {
-  findById: async postId => {
-    const res = await fetch(`${process.env.API}/posts/${postId}`);
+  post: async args => {
+    const res = await fetch(`${API}/posts/${args.where.id}`);
     const post = await res.json();
     return post;
   },
-  findByUserId: async userId => {
-    const res = await fetch(`${process.env.API}/posts?userId=${userId}`);
+  posts: async args => {
+    const res = await fetch(`${API}/posts?userId=${args.where.userId}`);
     const posts = await res.json();
     return posts;
   },

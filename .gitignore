@@ -3,3 +3,4 @@ dist
 *.log
 .DS_Store
 .docz
+packages/app/__generated__/*

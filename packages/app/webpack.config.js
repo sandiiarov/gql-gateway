@@ -5,7 +5,10 @@ module.exports = {
     index: './src/index.tsx',
   },
   resolve: {
-    extensions: ['.js', '.ts', '.tsx'],
+    extensions: ['.mjs', '.js', '.ts', '.tsx'],
+  },
+  devServer: {
+    historyApiFallback: true,
   },
   module: {
     rules: [

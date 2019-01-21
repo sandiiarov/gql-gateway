@@ -7,14 +7,26 @@ export interface User {
   email: string;
 }
 
-export interface DB {
-  findById: (id: string) => Promise<User>;
+interface UserArgs {
+  where: { id: string };
 }
 
+export interface DB {
+  user: (args: UserArgs) => Promise<User>;
+  users: () => Promise<User[]>;
+}
+
+const { API } = process.env;
+
 export const db: DB = {
-  findById: async userId => {
-    const res = await fetch(`${process.env.API}/users/${userId}`);
+  user: async args => {
+    const res = await fetch(`${API}/users/${args.where.id}`);
     const user = await res.json();
     return user;
+  },
+  users: async () => {
+    const res = await fetch(`${API}/users`);
+    const users = await res.json();
+    return users;
   },
 };

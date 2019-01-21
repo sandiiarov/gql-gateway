@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "graphql:production": "run-func packages/pipelines/tasks graphql production",
-    "graphql:development": "run-func packages/pipelines/tasks graphql development"
+    "graphql": "run-func packages/pipelines/tasks graphql",
+    "tsc": "run-func packages/pipelines/tasks tsc"
   },
   "devDependencies": {
     "@lerna/run": "3.10.6",

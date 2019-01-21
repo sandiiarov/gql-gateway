@@ -10,7 +10,7 @@ const app = express();
 
 const server = new ApolloServer({
   typeDefs,
-  resolvers,
+  resolvers: resolvers as any,
   context: () => ({ db }),
   introspection: true,
 });
