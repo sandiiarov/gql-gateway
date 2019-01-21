@@ -5,7 +5,7 @@ import { withStyles, WithStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
-import { GetPostsQuery, GetPostsVariables } from '../__generated__/types';
+import { GetPostsQuery, GetPostsVariables } from '../types';
 
 const GET_POSTS = gql`
   query GetPosts($userId: ID!) {

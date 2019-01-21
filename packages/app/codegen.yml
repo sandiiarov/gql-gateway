@@ -2,7 +2,7 @@ schema: http://localhost:4000/graphql
 documents: ./src/**/*.{ts,tsx}
 overwrite: true
 generates:
-  ./__generated__/types.ts:
+  ./types.ts:
     config:
       noNamespaces: true
     plugins:

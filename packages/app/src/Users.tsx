@@ -4,7 +4,7 @@ import { useQuery } from 'react-apollo-hooks';
 import { navigate } from '@reach/router';
 import { withStyles, WithStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
-import { GetUsersQuery } from '../__generated__/types';
+import { GetUsersQuery } from '../types';
 
 const GET_USERS = gql`
   query GetUsers {
