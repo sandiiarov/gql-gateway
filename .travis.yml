@@ -13,3 +13,5 @@ script:
   - npx lerna run --scope @gql-gateway/app generate
   - npx lerna run --scope @gql-gateway/app tsc
   - npx apollo service:check
+after_success:
+  - if [ "$TRAVIS_BRANCH" = "master" ]; then npx apollo service:push; fi
