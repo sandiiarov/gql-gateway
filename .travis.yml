@@ -4,8 +4,12 @@ node_js:
 install:
   - yarn
 before_script:
-  - npx lerna run --scope @gql-gateway/pipelines graphql &
-  - sleep 20
+  - npx lerna run --scope @gql-gateway/graphql-user start &
+  - npx lerna run --scope @gql-gateway/graphql-post start &
+  - sleep 10
+  - npx lerna run --scope @gql-gateway/graphql-gateway start &
+  - sleep 10
 script:
-  - npx lerna run --scope @gql-gateway/pipelines tsc
+  - npx lerna run --scope @gql-gateway/app generate
+  - npx lerna run --scope @gql-gateway/app tsc
   - npx apollo service:check
