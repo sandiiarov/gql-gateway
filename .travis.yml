@@ -4,14 +4,14 @@ node_js:
 install:
   - yarn
 before_script:
-  - npx lerna run --scope @gql-gateway/graphql-user start &
-  - npx lerna run --scope @gql-gateway/graphql-post start &
+  - yarn --cwd packages/graphql-user start &
+  - yarn --cwd packages/graphql-post start &
   - sleep 10
-  - npx lerna run --scope @gql-gateway/graphql-gateway start &
+  - yarn --cwd packages/graphql-gateway start &
   - sleep 10
 script:
-  - npx lerna run --scope @gql-gateway/app generate
-  - npx lerna run --scope @gql-gateway/app tsc
+  - yarn --cwd packages/app generate
+  - yarn --cwd packages/app tsc
   - npx apollo service:check
 after_success:
   - if [ "$TRAVIS_BRANCH" = "master" ]; then npx apollo service:push; fi
