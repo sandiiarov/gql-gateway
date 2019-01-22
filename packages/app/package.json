@@ -6,7 +6,7 @@
     "start": "webpack-dev-server --hot --mode development",
     "build": "webpack --mode production",
     "tsc": "tsc",
-    "generate": "apollo client:codegen --target typescript --includes=./src/**/*.{ts,tsx}"
+    "generate": "gql-gen"
   },
   "dependencies": {
     "@material-ui/core": "3.9.0",
@@ -29,7 +29,6 @@
     "@types/reach__router": "1.2.3",
     "@types/react": "16.7.20",
     "@types/react-dom": "16.0.11",
-    "apollo": "2.3.0",
     "babel-loader": "8.0.5",
     "eslint": "5.12.0",
     "eslint-config-prettier": "3.4.0",
@@ -37,6 +36,9 @@
     "eslint-plugin-prettier": "3.0.1",
     "eslint-plugin-react": "7.12.4",
     "eslint-plugin-typescript": "1.0.0-rc.3",
+    "graphql-code-generator": "0.16.0",
+    "graphql-codegen-typescript-client": "0.16.0",
+    "graphql-codegen-typescript-common": "0.16.0",
     "html-webpack-plugin": "3.2.0",
     "prettier": "1.16.0",
     "react-hot-loader": "4.6.3",
