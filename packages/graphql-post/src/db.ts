@@ -2,6 +2,7 @@ import fetch from 'node-fetch';
 
 export interface Post {
   id: string;
+  title: string;
   body: string;
 }
 
