@@ -1,4 +1,3 @@
-import './env';
 import Gateway from './gateway';
 import { typeDefs } from './typeDefs';
 import { resolvers } from './resolvers';

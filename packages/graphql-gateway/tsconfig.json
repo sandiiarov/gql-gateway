@@ -3,10 +3,11 @@
     "target": "esnext",
     "module": "commonjs",
     "moduleResolution": "node",
-    "allowJs": true,
-    "noEmit": true,
     "strict": true,
-    "isolatedModules": true
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true
   },
-  "include": ["src"]
+  "include": ["src"],
+  "exclude": ["node_modules"]
 }

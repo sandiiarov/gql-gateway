@@ -1,0 +1,18 @@
+input PostWhereInput {
+  id: ID!
+}
+
+input PostsWhereInput {
+  userId: ID!
+}
+
+type Post {
+  id: ID!
+  title: String!
+  body: String!
+}
+
+type Query {
+  post(where: PostWhereInput!): Post!
+  posts(where: PostsWhereInput!): [Post!]!
+}

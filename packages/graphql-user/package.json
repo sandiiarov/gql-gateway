@@ -5,14 +5,14 @@
   "main": "index.ts",
   "scripts": {
     "start": "ts-node src/index.ts",
-    "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts"
+    "dev": "tsnd src/index.ts",
+    "generate": "gql-gen"
   },
   "dependencies": {
     "apollo-server-express": "2.3.1",
-    "dotenv": "^6.2.0",
     "express": "4.16.4",
     "graphql": "14.0.2",
-    "node-fetch": "^2.3.0"
+    "node-fetch": "2.3.0"
   },
   "devDependencies": {
     "@types/dotenv": "6.1.0",
@@ -21,8 +21,12 @@
     "eslint-config-prettier": "3.4.0",
     "eslint-plugin-prettier": "3.0.1",
     "eslint-plugin-typescript": "1.0.0-rc.3",
-    "nodemon": "1.18.9",
+    "graphql-code-generator": "0.16.0",
+    "graphql-codegen-typescript-common": "0.16.0",
+    "graphql-codegen-typescript-resolvers": "0.16.0",
+    "graphql-codegen-typescript-server": "0.16.0",
     "ts-node": "8.0.1",
+    "ts-node-dev": "1.0.0-pre.32",
     "typescript": "3.2.2"
   }
 }

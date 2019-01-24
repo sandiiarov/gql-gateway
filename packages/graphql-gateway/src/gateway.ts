@@ -1,4 +1,4 @@
-import * as express from 'express';
+import express from 'express';
 import { ApolloEngine } from 'apollo-engine';
 import { ApolloServer, mergeSchemas } from 'apollo-server-express';
 import { HttpLink } from 'apollo-link-http';
@@ -67,7 +67,9 @@ class Gateway {
       schemas: [...Object.values(schemas), this.typeDefs],
       resolvers,
     });
-    const engine = new ApolloEngine({ apiKey: process.env.ENGINE_API_KEY });
+    const engine = new ApolloEngine({
+      apiKey: 'service:sandiiarov-7698:rv3UnQr4OVxC35oJ5pYCMw',
+    });
     const app = express();
 
     const server = new ApolloServer({

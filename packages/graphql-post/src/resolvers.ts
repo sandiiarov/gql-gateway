@@ -1,12 +1,19 @@
-import { Context } from './types';
+import fetch from 'node-fetch';
+import { IResolvers } from '../generated/graphql';
 
-export const resolvers = {
+const API = 'https://jsonplaceholder.typicode.com';
+
+export const resolvers: IResolvers = {
   Query: {
-    post(parent: any, args: { id: string }, context: Context) {
-      return context.db.post({ where: { id: args.id } });
+    async post(parent, args, context) {
+      const res = await fetch(`${API}/posts/${args.where.id}`);
+      const user = await res.json();
+      return user;
     },
-    posts(parent: any, args: { userId: string }, context: Context) {
-      return context.db.posts({ where: { userId: args.userId } });
+    async posts(parent, args, context) {
+      const res = await fetch(`${API}/posts?userId=${args.where.userId}`);
+      const users = await res.json();
+      return users;
     },
   },
 };

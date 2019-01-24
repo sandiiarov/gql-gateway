@@ -6,16 +6,10 @@
   ],
   "resolutions": {
     "**/graphql": "14.1.1",
-    "**/react": "16.7.0-alpha.2",
-    "**/react-dom": "16.7.0-alpha.2"
+    "**/react": "16.7.0",
+    "**/react-dom": "16.7.0"
   },
   "devDependencies": {
-    "lerna": "3.10.7",
-    "graphql-codegen-typescript-common": "0.16.0",
-    "graphql-codegen-typescript-client": "0.16.0",
-    "graphql-codegen-typescript-react-apollo": "0.16.0"
-  },
-  "scripts": {
-    "generate": "gql-gen --config codegen.yml"
+    "lerna": "3.10.7"
   }
 }

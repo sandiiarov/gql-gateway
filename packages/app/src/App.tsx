@@ -1,21 +1,12 @@
-import * as React from 'react';
+import React from 'react';
 import { hot } from 'react-hot-loader/root';
-import ApolloClient from 'apollo-boost';
-import { ApolloProvider } from 'react-apollo-hooks';
-import { Router, Redirect } from '@reach/router';
-import Page from './Page';
-
-const client = new ApolloClient({ uri: 'http://localhost:4000/graphql' });
+import { ApolloProvider } from 'react-apollo';
+import { client } from './client';
+import Users from './containers/Users';
 
 const App = () => (
   <ApolloProvider client={client}>
-    <Router>
-      {
-        // @ts-ignore
-        <Redirect path="/" to="/1" noThrow />
-      }
-      <Page path="/:id" />
-    </Router>
+    <Users />
   </ApolloProvider>
 );
 
