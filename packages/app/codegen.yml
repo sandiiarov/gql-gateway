@@ -5,7 +5,7 @@ generates:
   ./generated/graphql.tsx:
     config:
       noNamespaces: true
-      noGraphqlTag: true
+      # noGraphqlTag: true
     plugins:
       - typescript-common
       - typescript-client

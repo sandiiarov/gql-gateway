@@ -47,85 +47,21 @@ export type GetUserUser = {
 import * as ReactApollo from "react-apollo";
 import * as React from "react";
 
+import gql from "graphql-tag";
+
 // ====================================================
 // Components
 // ====================================================
 
-export const GetUserDocument = {
-  kind: "Document",
-  definitions: [
-    {
-      kind: "OperationDefinition",
-      operation: "query",
-      name: { kind: "Name", value: "GetUser" },
-      variableDefinitions: [
-        {
-          kind: "VariableDefinition",
-          variable: { kind: "Variable", name: { kind: "Name", value: "id" } },
-          type: {
-            kind: "NonNullType",
-            type: { kind: "NamedType", name: { kind: "Name", value: "ID" } }
-          },
-          directives: []
-        }
-      ],
-      directives: [],
-      selectionSet: {
-        kind: "SelectionSet",
-        selections: [
-          {
-            kind: "Field",
-            name: { kind: "Name", value: "user" },
-            arguments: [
-              {
-                kind: "Argument",
-                name: { kind: "Name", value: "where" },
-                value: {
-                  kind: "ObjectValue",
-                  fields: [
-                    {
-                      kind: "ObjectField",
-                      name: { kind: "Name", value: "id" },
-                      value: {
-                        kind: "Variable",
-                        name: { kind: "Name", value: "id" }
-                      }
-                    }
-                  ]
-                }
-              }
-            ],
-            directives: [],
-            selectionSet: {
-              kind: "SelectionSet",
-              selections: [
-                {
-                  kind: "Field",
-                  name: { kind: "Name", value: "id" },
-                  arguments: [],
-                  directives: []
-                },
-                {
-                  kind: "Field",
-                  name: { kind: "Name", value: "name" },
-                  arguments: [],
-                  directives: []
-                },
-                {
-                  kind: "Field",
-                  name: { kind: "Name", value: "email" },
-                  arguments: [],
-                  directives: []
-                }
-              ]
-            }
-          }
-        ]
-      }
+export const GetUserDocument = gql`
+  query GetUser($id: ID!) {
+    user(where: { id: $id }) {
+      id
+      name
+      email
     }
-  ],
-  loc: { start: 0, end: 109 }
-};
+  }
+`;
 export class GetUserComponent extends React.Component<
   Partial<ReactApollo.QueryProps<GetUserQuery, GetUserVariables>>
 > {
