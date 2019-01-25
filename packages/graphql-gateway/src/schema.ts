@@ -1,4 +1,4 @@
-export const typeDefs = `
+export default `
   extend type User {
     posts: [Post!]
   }

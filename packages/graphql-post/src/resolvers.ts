@@ -1,4 +1,4 @@
-import fetch from 'node-fetch';
+import fetch from 'isomorphic-fetch';
 import { IResolvers } from '../generated/graphql';
 
 const API = 'https://jsonplaceholder.typicode.com';

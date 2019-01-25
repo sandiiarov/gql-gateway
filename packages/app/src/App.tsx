@@ -1,12 +1,12 @@
 import React from 'react';
-import { hot } from 'react-hot-loader/root';
 import { ApolloProvider } from 'react-apollo';
+import { hot } from 'react-hot-loader/root';
 import { client } from './client';
-import Users from './containers/Users';
+import User from './containers/User';
 
 const App = () => (
   <ApolloProvider client={client}>
-    <Users />
+    <User />
   </ApolloProvider>
 );
 

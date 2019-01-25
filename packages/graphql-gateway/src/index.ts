@@ -1,10 +1,30 @@
-import Gateway from './gateway';
-import { typeDefs } from './typeDefs';
-import { resolvers } from './resolvers';
+import { ApolloEngine } from 'apollo-engine';
+import { ApolloServer } from 'apollo-server-express';
+import express from 'express';
+import makeSchema from './makeSchema';
 
-const gateway = new Gateway({
-  user: 'http://localhost:4001/graphql',
-  post: 'http://localhost:4002/graphql',
+const app = express();
+
+const engine = new ApolloEngine({
+  apiKey: 'service:sandiiarov-7698:rv3UnQr4OVxC35oJ5pYCMw',
 });
 
-gateway.stitch({ typeDefs, resolvers }).listen({ port: 4000 });
+(async () => {
+  const server = new ApolloServer({
+    schema: await makeSchema(),
+    introspection: true,
+    engine: false,
+  });
+
+  app.use('/reset-schema', async (req, res, next) => {
+    // @ts-ignore
+    server.schema = await makeSchema();
+    res.json({ status: 'OK' });
+  });
+
+  server.applyMiddleware({ app });
+
+  engine.listen({ port: 4000, expressApp: app }, () => {
+    console.log(`🚀 RUNNING @ ${4000}`);
+  });
+})();
