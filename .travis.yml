@@ -6,9 +6,9 @@ install:
 before_script:
   - yarn --cwd packages/graphql-user start &
   - yarn --cwd packages/graphql-post start &
-  - sleep 10
+  - sleep 30
   - yarn --cwd packages/graphql-gateway start &
-  - sleep 10
+  - sleep 30
 script:
   - yarn --cwd packages/app generate
   - yarn --cwd packages/app tsc
