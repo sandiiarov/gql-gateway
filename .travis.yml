@@ -4,9 +4,12 @@ node_js:
 install:
   - yarn
 before_script:
+  - yarn --cwd packages/graphql-user generate
   - yarn --cwd packages/graphql-user start &
+  - yarn --cwd packages/graphql-post generate
   - yarn --cwd packages/graphql-post start &
   - sleep 30
+  - yarn --cwd packages/graphql-gateway generate
   - yarn --cwd packages/graphql-gateway start &
   - sleep 30
 script:

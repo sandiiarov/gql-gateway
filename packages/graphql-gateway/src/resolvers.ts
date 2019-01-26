@@ -6,10 +6,16 @@ interface Schemas {
   [name: string]: GraphQLSchema;
 }
 
+const UserFragment = `
+  fragment UserFragment on User {
+    id
+  }
+`;
+
 export const resolvers = ({ post }: Schemas): IResolversParameter => ({
   User: {
     posts: {
-      fragment: `fragment UserFragment on User { id }`,
+      fragment: UserFragment,
       resolve(parent: User, args, context, info) {
         interface Options extends IDelegateToSchemaOptions {
           args: PostsQueryArgs;
