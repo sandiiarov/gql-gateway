@@ -1,4 +1,5 @@
 import { HttpLink } from 'apollo-link-http';
+import fs from 'fs';
 import {
   introspectSchema,
   makeRemoteExecutableSchema,
@@ -6,30 +7,24 @@ import {
 } from 'graphql-tools';
 import fetch from 'isomorphic-fetch';
 import { resolvers } from './resolvers';
-import LinkSchema from './schema';
+
+const schema = async (uri: string) => {
+  const link = new HttpLink({ uri, fetch });
+  const schema = await introspectSchema(link);
+
+  return makeRemoteExecutableSchema({ schema, link });
+};
 
 export default async () => {
-  const UserLink = new HttpLink({
-    uri: 'http://localhost:4001/graphql',
-    fetch,
-  });
-  const PostLink = new HttpLink({
-    uri: 'http://localhost:4002/graphql',
-    fetch,
-  });
-
-  const UserSchema = makeRemoteExecutableSchema({
-    schema: await introspectSchema(UserLink),
-    link: UserLink,
-  });
-
-  const PostSchema = makeRemoteExecutableSchema({
-    schema: await introspectSchema(PostLink),
-    link: PostLink,
-  });
+  const UserSchema = await schema('http://localhost:4001/graphql');
+  const PostSchema = await schema('http://localhost:4002/graphql');
 
   return mergeSchemas({
-    schemas: [UserSchema, PostSchema, LinkSchema],
+    schemas: [
+      UserSchema,
+      PostSchema,
+      fs.readFileSync('./src/schema.graphql', 'utf8'),
+    ],
     resolvers: resolvers({ user: UserSchema, post: PostSchema }),
   });
 };

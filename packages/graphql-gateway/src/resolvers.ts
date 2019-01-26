@@ -1,18 +1,32 @@
-export const resolvers = ({ post }: any) => ({
+import { GraphQLSchema } from 'graphql';
+import { IDelegateToSchemaOptions, IResolversParameter } from 'graphql-tools';
+import { PostsQueryArgs } from '../generated/post';
+import { User } from '../generated/user';
+interface Schemas {
+  [name: string]: GraphQLSchema;
+}
+
+export const resolvers = ({ post }: Schemas): IResolversParameter => ({
   User: {
     posts: {
       fragment: `fragment UserFragment on User { id }`,
-      resolve(parent: { id: string }, args: any, context: any, info: any) {
-        return info.mergeInfo.delegateToSchema({
+      resolve(parent: User, args, context, info) {
+        interface Options extends IDelegateToSchemaOptions {
+          args: PostsQueryArgs;
+        }
+
+        const options: Options = {
           schema: post,
           operation: 'query',
           fieldName: 'posts',
           args: {
-            userId: parent.id,
+            where: { userId: parent.id },
           },
           context,
           info,
-        });
+        };
+
+        return info.mergeInfo.delegateToSchema(options);
       },
     },
   },
