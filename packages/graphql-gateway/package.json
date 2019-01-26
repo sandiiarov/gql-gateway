@@ -4,7 +4,7 @@
   "license": "MIT",
   "main": "index.ts",
   "scripts": {
-    "start": "tsc && node dist/index.js",
+    "start": "tsc && node dist/src/index.js",
     "dev": "tsnd src/index.ts",
     "generate": "gql-gen"
   },
