@@ -1,8 +1,12 @@
 import React from 'react';
 import { GetUserComponent } from '../../../generated/graphql';
 
-const User = () => (
-  <GetUserComponent variables={{ id: '1' }}>
+interface Props {
+  id?: string;
+}
+
+const User = ({ id }: Required<Props>) => (
+  <GetUserComponent variables={{ id }}>
     {({ data, loading }) => {
       if (loading) return 'loading...';
 
@@ -19,5 +23,9 @@ const User = () => (
     }}
   </GetUserComponent>
 );
+
+User.defaultProps = {
+  id: '1',
+};
 
 export default User;

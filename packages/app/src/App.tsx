@@ -6,7 +6,10 @@ import User from './containers/User';
 
 const App = () => (
   <ApolloProvider client={client}>
-    <User />
+    <User id="1" />
+    <User id="2" />
+    <User id="3" />
+    <User id="4" />
   </ApolloProvider>
 );
 
