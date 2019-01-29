@@ -1,7 +1,5 @@
 query GetUser($id: ID!) {
   user(where: { id: $id }) {
-    id
-    name
-    email
+    ...UserInfo
   }
 }

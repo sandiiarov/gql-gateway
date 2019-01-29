@@ -11,6 +11,7 @@ const User = () => (
           <ul>
             <li>{data.user.id}</li>
             <li>{data.user.name}</li>
+            <li>{data.user.username}</li>
             <li>{data.user.email}</li>
           </ul>
         )
