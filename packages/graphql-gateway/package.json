@@ -6,6 +6,8 @@
   "scripts": {
     "start": "tsc && node dist/src/index.js",
     "dev": "tsnd src/index.ts",
+    "schema:user": "get-graphql-schema http://localhost:4001/graphql > src/schema/user.graphql",
+    "schema:post": "get-graphql-schema http://localhost:4002/graphql > src/schema/post.graphql",
     "generate": "gql-gen"
   },
   "dependencies": {
@@ -25,6 +27,7 @@
     "eslint-config-prettier": "4.0.0",
     "eslint-plugin-prettier": "3.0.1",
     "eslint-plugin-typescript": "1.0.0-rc.3",
+    "get-graphql-schema": "2.1.2",
     "graphql-code-generator": "0.16.0",
     "graphql-codegen-typescript-common": "0.16.0",
     "graphql-codegen-typescript-resolvers": "0.16.0",

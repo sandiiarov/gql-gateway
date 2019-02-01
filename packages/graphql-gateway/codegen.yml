@@ -2,23 +2,21 @@ overwrite: true
 generates:
   ./generated/gateway.ts:
     schema:
-      - http://localhost:4001/graphql
-      - http://localhost:4002/graphql
-      - src/schema.graphql
+      - ./src/schema/*.graphql
     config:
       noNamespaces: true
     plugins:
       - typescript-common
       - typescript-server
   ./generated/user.ts:
-    schema: http://localhost:4001/graphql
+    schema: ./src/schema/user.graphql
     config:
       noNamespaces: true
     plugins:
       - typescript-common
       - typescript-server
   ./generated/post.ts:
-    schema: http://localhost:4002/graphql
+    schema: ./src/schema/post.graphql
     config:
       noNamespaces: true
     plugins:

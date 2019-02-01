@@ -1,30 +1,14 @@
-import { ApolloEngine } from 'apollo-engine';
-import { ApolloServer } from 'apollo-server-express';
-import express from 'express';
-import makeSchema from './makeSchema';
+import Gateway from './gateway';
 
-const app = express();
-
-const engine = new ApolloEngine({
-  apiKey: 'service:sandiiarov-7698:rv3UnQr4OVxC35oJ5pYCMw',
+const gateway = new Gateway({
+  user: {
+    definition: require.resolve('./schema/user.graphql'),
+    endpoint: 'http://localhost:4001/graphql',
+  },
+  post: {
+    definition: require.resolve('./schema/post.graphql'),
+    endpoint: 'http://localhost:4002/graphql',
+  },
 });
 
-(async () => {
-  const server = new ApolloServer({
-    schema: await makeSchema(),
-    introspection: true,
-    engine: false,
-  });
-
-  app.use('/reset-schema', async (req, res, next) => {
-    // @ts-ignore
-    server.schema = await makeSchema();
-    res.json({ status: 'OK' });
-  });
-
-  server.applyMiddleware({ app });
-
-  engine.listen({ port: 4000, expressApp: app }, () => {
-    console.log(`🚀 RUNNING @ ${4000}`);
-  });
-})();
+gateway.listen({ port: 4000 });
