@@ -3,7 +3,7 @@ import { HttpLink } from 'apollo-link-http';
 import { ApolloServer } from 'apollo-server-express';
 import express from 'express';
 import fs from 'fs';
-import { GraphQLSchema } from 'graphql';
+import { GraphQLSchema, printSchema } from 'graphql';
 import { makeRemoteExecutableSchema, mergeSchemas } from 'graphql-tools';
 import fetch from 'isomorphic-fetch';
 import { resolvers } from './resolvers';
@@ -55,8 +55,12 @@ class Gateway {
     const app = express();
     const engine = new ApolloEngine({ apiKey: APOLLO_ENGINE_KEY });
 
+    const schema = this.makeSchemas();
+
+    fs.writeFileSync('src/schema/schema.graphql', printSchema(schema));
+
     const server = new ApolloServer({
-      schema: this.makeSchemas(),
+      schema,
       introspection: true,
       engine: false,
     });

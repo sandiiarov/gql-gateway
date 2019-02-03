@@ -24,9 +24,7 @@ type Query {
   posts(where: PostsWhereInput!): [Post!]!
 }
 
-"""
-The `Upload` scalar type represents a file upload.
-"""
+"""The `Upload` scalar type represents a file upload."""
 scalar Upload
 
 type User {
