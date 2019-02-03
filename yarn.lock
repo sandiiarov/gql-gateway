@@ -2,12 +2,28 @@
 # yarn lockfile v1
 
 
+"@apollographql/apollo-tools@^0.2.6":
+  version "0.2.9"
+  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@apollographql/apollo-tools/-/apollo-tools-0.2.9.tgz#1e20999d11728ef47f8f812f2be0426b5dde1a51"
+  integrity sha1-HiCZnRFyjvR/j4EvK+BCa13eGlE=
+  dependencies:
+    apollo-env "0.2.5"
+
 "@apollographql/apollo-tools@^0.3.0":
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/@apollographql/apollo-tools/-/apollo-tools-0.3.0.tgz#45e29010cd1c4ffb0d359d49ad243eba7ea13cba"
   integrity sha512-Tg0NVtCFHMQkcSX/dqT0m+BNnK9/lbjo4YFNX9W5g3EwczlC0edrleUM/dC4wXw71DwGrGwFiZxWLxqY1ocU5A==
   dependencies:
     apollo-env "0.3.0"
+
+"@apollographql/apollo-upload-server@^5.0.3":
+  version "5.0.3"
+  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@apollographql/apollo-upload-server/-/apollo-upload-server-5.0.3.tgz#8558c378ff6457de82147e5072c96a6b242773b7"
+  integrity sha1-hVjDeP9kV96CFH5QcslqayQnc7c=
+  dependencies:
+    "@babel/runtime-corejs2" "^7.0.0-rc.1"
+    busboy "^0.2.14"
+    object-path "^0.11.4"
 
 "@apollographql/graphql-playground-html@^1.6.6":
   version "1.6.6"
@@ -683,6 +699,14 @@
     "@babel/helper-plugin-utils" "^7.0.0"
     "@babel/plugin-transform-typescript" "^7.1.0"
 
+"@babel/runtime-corejs2@^7.0.0-rc.1":
+  version "7.3.1"
+  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@babel/runtime-corejs2/-/runtime-corejs2-7.3.1.tgz#0c113242e2328f9674d42703a89bee6ebebe9a82"
+  integrity sha1-DBEyQuIyj5Z01CcDqJvubr6+moI=
+  dependencies:
+    core-js "^2.5.7"
+    regenerator-runtime "^0.12.0"
+
 "@babel/template@^7.1.0", "@babel/template@^7.1.2", "@babel/template@^7.2.2":
   version "7.2.2"
   resolved "https://registry.npmjs.org/@babel/template/-/template-7.2.2.tgz#005b3fdf0ed96e88041330379e0da9a708eb2907"
@@ -715,6 +739,71 @@
     esutils "^2.0.2"
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
+
+"@graphql-inspector/api@0.13.0":
+  version "0.13.0"
+  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@graphql-inspector/api/-/api-0.13.0.tgz#7daf21dc59451d9c3833c283c324d119b16a319c"
+  integrity sha1-fa8h3FlFHZw4M8KDwyTRGbFqMZw=
+  dependencies:
+    "@graphql-inspector/core" "0.13.0"
+    "@graphql-inspector/load" "0.13.0"
+    "@graphql-modules/epoxy" "0.2.17"
+    apollo-server-express "2.2.6"
+    graphql-tag "2.10.0"
+
+"@graphql-inspector/cli@0.13.0":
+  version "0.13.0"
+  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@graphql-inspector/cli/-/cli-0.13.0.tgz#33dd3e3300747bcd4acbb0ae311a79e742c516ae"
+  integrity sha1-M90+MwB0e81Ky7CuMRp550LFFq4=
+  dependencies:
+    "@graphql-inspector/api" "0.13.0"
+    "@graphql-inspector/core" "0.13.0"
+    "@graphql-inspector/load" "0.13.0"
+    "@graphql-inspector/ui" "0.13.0"
+    apollo-server "2.2.6"
+    apollo-server-express "2.2.6"
+    chalk "2.4.1"
+    commander "2.19.0"
+    express "4.16.4"
+    figures "2.0.0"
+    indent-string "3.2.0"
+    is-valid-path "0.1.1"
+    log-symbols "2.2.0"
+    opn "5.4.0"
+
+"@graphql-inspector/core@0.13.0":
+  version "0.13.0"
+  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@graphql-inspector/core/-/core-0.13.0.tgz#34f6fcf2bd924e30c190d87f8ac4962ef26c2cb0"
+  integrity sha1-NPb88r2STjDBkNh/isSWLvJsLLA=
+  dependencies:
+    dependency-graph "0.8.0"
+
+"@graphql-inspector/load@0.13.0":
+  version "0.13.0"
+  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@graphql-inspector/load/-/load-0.13.0.tgz#6aee8060fd4b480cc97082114b1fc89a8bdfa376"
+  integrity sha1-au6AYP1LSAzJcIIRSx/Imovfo3Y=
+  dependencies:
+    graphql-toolkit "0.0.3"
+    node-fetch "2.3.0"
+
+"@graphql-inspector/ui@0.13.0":
+  version "0.13.0"
+  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@graphql-inspector/ui/-/ui-0.13.0.tgz#fd073363a72ab8178a3b831c2713b9e92585a221"
+  integrity sha1-/QczY6cquBeKO4McJxO56SWFoiE=
+  dependencies:
+    express "4.16.4"
+    react "16.7.0-alpha.2"
+    react-dom "16.7.0-alpha.2"
+
+"@graphql-modules/epoxy@0.2.17":
+  version "0.2.17"
+  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@graphql-modules/epoxy/-/epoxy-0.2.17.tgz#f93fd64baa7328f0f69da7a2aa226b3c6e296e31"
+  integrity sha1-+T/WS6pzKPD2naeiqiJrPG4pbjE=
+  dependencies:
+    "@types/deepmerge" "2.1.0"
+    deepmerge "2.2.1"
+    graphql-tools "4.0.3"
+    tslib "1.9.3"
 
 "@graphql-modules/epoxy@0.2.18":
   version "0.2.18"
@@ -1448,6 +1537,11 @@
   dependencies:
     "@types/express" "*"
 
+"@types/deepmerge@2.1.0":
+  version "2.1.0"
+  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@types/deepmerge/-/deepmerge-2.1.0.tgz#22f175e5cb55874fe818caa6fd50a1d98fc3d748"
+  integrity sha1-IvF15ctVh0/oGMqm/VCh2Y/D10g=
+
 "@types/events@*":
   version "1.2.0"
   resolved "https://registry.npmjs.org/@types/events/-/events-1.2.0.tgz#81a6731ce4df43619e5c8c945383b3e62a89ea86"
@@ -1462,7 +1556,7 @@
     "@types/node" "*"
     "@types/range-parser" "*"
 
-"@types/express@*", "@types/express@^4.0.36":
+"@types/express@*", "@types/express@4.16.0", "@types/express@^4.0.36":
   version "4.16.0"
   resolved "https://registry.npmjs.org/@types/express/-/express-4.16.0.tgz#6d8bc42ccaa6f35cf29a2b7c3333cb47b5a32a19"
   integrity sha512-TtPEYumsmSTtTetAPXlJVf3kEqb6wZK0bZojpJQrnD/djV4q1oB6QQ8aKvKqwNPACoe02GNiy5zDzcYivR5Z2w==
@@ -1924,6 +2018,14 @@ anymatch@^2.0.0:
     micromatch "^3.1.4"
     normalize-path "^2.1.1"
 
+apollo-cache-control@0.3.3:
+  version "0.3.3"
+  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/apollo-cache-control/-/apollo-cache-control-0.3.3.tgz#ad71d8f786e06f0275b2432004c15c2d37c48484"
+  integrity sha1-rXHY94bgbwJ1skMgBMFcLTfEhIQ=
+  dependencies:
+    apollo-server-env "2.2.0"
+    graphql-extensions "0.3.3"
+
 apollo-cache-control@0.4.1:
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/apollo-cache-control/-/apollo-cache-control-0.4.1.tgz#24eb3fd46ca7b8a4a6665e11d3b4ec53181bcad7"
@@ -1964,6 +2066,14 @@ apollo-client@2.4.12:
     tslib "^1.9.3"
     zen-observable "^0.8.0"
 
+apollo-datasource@0.2.1:
+  version "0.2.1"
+  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/apollo-datasource/-/apollo-datasource-0.2.1.tgz#3ecef4efe64f7a04a43862f32027d38ac09e142c"
+  integrity sha1-Ps707+ZPegSkOGLzICfTisCeFCw=
+  dependencies:
+    apollo-server-caching "0.2.1"
+    apollo-server-env "2.2.0"
+
 apollo-datasource@0.2.2:
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/apollo-datasource/-/apollo-datasource-0.2.2.tgz#5e7dc19d50cadcf4328e54a7c0a19a9f04f37474"
@@ -1987,12 +2097,30 @@ apollo-engine-binary-windows@0.2018.6-20-gc0e4bb519:
   resolved "https://registry.npmjs.org/apollo-engine-binary-windows/-/apollo-engine-binary-windows-0.2018.6-20-gc0e4bb519.tgz#288c718a730f2a1f8bb0aae9fff3e6da23c1f00f"
   integrity sha512-Cj0FSI8MDHcDc8EknzcqBP57R5S6gLIdD4/lpQaOtZureS/Ijx3mltZ0csmn5v8S0dDaMM6zjElBMDfwl6aEDg==
 
+apollo-engine-reporting-protobuf@0.1.0:
+  version "0.1.0"
+  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/apollo-engine-reporting-protobuf/-/apollo-engine-reporting-protobuf-0.1.0.tgz#fbc220cac2a3b7800ffc155d7e54c21c56b7848e"
+  integrity sha1-+8IgysKjt4AP/BVdflTCHFa3hI4=
+  dependencies:
+    protobufjs "^6.8.6"
+
 apollo-engine-reporting-protobuf@0.2.0:
   version "0.2.0"
   resolved "https://registry.npmjs.org/apollo-engine-reporting-protobuf/-/apollo-engine-reporting-protobuf-0.2.0.tgz#2aaf4d2eddefe7924d469cf1135267bc0deadf73"
   integrity sha512-qI+GJKN78UMJ9Aq/ORdiM2qymZ5yswem+/VDdVFocq+/e1QqxjnpKjQWISkswci5+WtpJl9SpHBNxG98uHDKkA==
   dependencies:
     protobufjs "^6.8.6"
+
+apollo-engine-reporting@0.1.3:
+  version "0.1.3"
+  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/apollo-engine-reporting/-/apollo-engine-reporting-0.1.3.tgz#85ad6ffd71db8f877202ce8b3d7dbfa7cabfbcf9"
+  integrity sha1-ha1v/XHbj4dyAs6LPX2/p8q/vPk=
+  dependencies:
+    apollo-engine-reporting-protobuf "0.1.0"
+    apollo-server-env "2.2.0"
+    async-retry "^1.2.1"
+    graphql-extensions "0.3.3"
+    lodash "^4.17.10"
 
 apollo-engine-reporting@0.2.1:
   version "0.2.1"
@@ -2020,6 +2148,14 @@ apollo-engine@1.1.2:
     apollo-engine-binary-darwin "0.2018.6-20-gc0e4bb519"
     apollo-engine-binary-linux "0.2018.6-20-gc0e4bb519"
     apollo-engine-binary-windows "0.2018.6-20-gc0e4bb519"
+
+apollo-env@0.2.5:
+  version "0.2.5"
+  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/apollo-env/-/apollo-env-0.2.5.tgz#162c785bccd2aea69350a7600fab4b7147fc9da5"
+  integrity sha1-Fix4W8zSrqaTUKdgD6tLcUf8naU=
+  dependencies:
+    core-js "^3.0.0-beta.3"
+    node-fetch "^2.2.0"
 
 apollo-env@0.3.0:
   version "0.3.0"
@@ -2059,12 +2195,45 @@ apollo-link@^1.0.0, apollo-link@^1.2.3, apollo-link@^1.2.6:
     apollo-utilities "^1.0.0"
     zen-observable-ts "^0.8.13"
 
+apollo-server-caching@0.2.1:
+  version "0.2.1"
+  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/apollo-server-caching/-/apollo-server-caching-0.2.1.tgz#7e67f8c8cac829e622b394f0fb82579cabbeadfd"
+  integrity sha1-fmf4yMrIKeYis5Tw+4JXnKu+rf0=
+  dependencies:
+    lru-cache "^5.0.0"
+
 apollo-server-caching@0.2.2:
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/apollo-server-caching/-/apollo-server-caching-0.2.2.tgz#38f71847aacc7d984c4423ec86318ac5d9887ee1"
   integrity sha512-EYNSR1Vubd14REonCRTJaO/Gr4lkjUTt/45Wp+f1DQtfsAZpHxAtCWafX5fesvq8krdHhSHyEUOTjj2JO8Qi9w==
   dependencies:
     lru-cache "^5.0.0"
+
+apollo-server-core@2.2.6:
+  version "2.2.6"
+  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/apollo-server-core/-/apollo-server-core-2.2.6.tgz#33031a3e1156d4cd0ad3c5c49de263173f521b32"
+  integrity sha1-MwMaPhFW1M0K08XEneJjFz9SGzI=
+  dependencies:
+    "@apollographql/apollo-tools" "^0.2.6"
+    "@apollographql/apollo-upload-server" "^5.0.3"
+    "@apollographql/graphql-playground-html" "^1.6.6"
+    "@types/ws" "^6.0.0"
+    apollo-cache-control "0.3.3"
+    apollo-datasource "0.2.1"
+    apollo-engine-reporting "0.1.3"
+    apollo-server-caching "0.2.1"
+    apollo-server-env "2.2.0"
+    apollo-server-errors "2.2.0"
+    apollo-server-plugin-base "0.1.6"
+    apollo-tracing "0.3.3"
+    graphql-extensions "0.3.6"
+    graphql-subscriptions "^1.0.0"
+    graphql-tag "^2.9.2"
+    graphql-tools "^4.0.0"
+    json-stable-stringify "^1.0.1"
+    lodash "^4.17.10"
+    subscriptions-transport-ws "^0.9.11"
+    ws "^6.0.0"
 
 apollo-server-core@2.3.3:
   version "2.3.3"
@@ -2105,6 +2274,25 @@ apollo-server-errors@2.2.0:
   resolved "https://registry.npmjs.org/apollo-server-errors/-/apollo-server-errors-2.2.0.tgz#5b452a1d6ff76440eb0f127511dc58031a8f3cb5"
   integrity sha512-gV9EZG2tovFtT1cLuCTavnJu2DaKxnXPRNGSTo+SDI6IAk6cdzyW0Gje5N2+3LybI0Wq5KAbW6VLei31S4MWmg==
 
+apollo-server-express@2.2.6:
+  version "2.2.6"
+  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/apollo-server-express/-/apollo-server-express-2.2.6.tgz#2c0c5bdab6eccf63ab138ad4b6d6836aeb723540"
+  integrity sha1-LAxb2rbsz2OrE4rUttaDautyNUA=
+  dependencies:
+    "@apollographql/apollo-upload-server" "^5.0.3"
+    "@apollographql/graphql-playground-html" "^1.6.6"
+    "@types/accepts" "^1.3.5"
+    "@types/body-parser" "1.17.0"
+    "@types/cors" "^2.8.4"
+    "@types/express" "4.16.0"
+    accepts "^1.3.5"
+    apollo-server-core "2.2.6"
+    body-parser "^1.18.3"
+    cors "^2.8.4"
+    graphql-subscriptions "^1.0.0"
+    graphql-tools "^4.0.0"
+    type-is "^1.6.16"
+
 apollo-server-express@2.3.3:
   version "2.3.3"
   resolved "https://registry.yarnpkg.com/apollo-server-express/-/apollo-server-express-2.3.3.tgz#de67930fd1052a3d44c28ca14ab87dc72b53c725"
@@ -2123,10 +2311,34 @@ apollo-server-express@2.3.3:
     graphql-tools "^4.0.0"
     type-is "^1.6.16"
 
+apollo-server-plugin-base@0.1.6:
+  version "0.1.6"
+  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/apollo-server-plugin-base/-/apollo-server-plugin-base-0.1.6.tgz#56932c0e3a0366e03952a6e2805efe5fa2e046bf"
+  integrity sha1-VpMsDjoDZuA5UqbigF7+X6LgRr8=
+
 apollo-server-plugin-base@0.2.3:
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/apollo-server-plugin-base/-/apollo-server-plugin-base-0.2.3.tgz#fe2df5acefbb0eead032cf559e4f65bb06b36bad"
   integrity sha512-NCJUAtr2lnV27pwqQEF2NTyT0yuaJ6qJbBSovtViEf38eXvxTPEXRE2Fg4uELrAVcxKfzQKaCzCScm5iFCcf6A==
+
+apollo-server@2.2.6:
+  version "2.2.6"
+  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/apollo-server/-/apollo-server-2.2.6.tgz#7af396692ff06a6feb3429a7287bac5ee18b58eb"
+  integrity sha1-evOWaS/wam/rNCmnKHusXuGLWOs=
+  dependencies:
+    apollo-server-core "2.2.6"
+    apollo-server-express "2.2.6"
+    express "^4.0.0"
+    graphql-subscriptions "^1.0.0"
+    graphql-tools "^4.0.0"
+
+apollo-tracing@0.3.3:
+  version "0.3.3"
+  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/apollo-tracing/-/apollo-tracing-0.3.3.tgz#b819942180480c1c4d89e613cf2eff8f6d8b595a"
+  integrity sha1-uBmUIYBIDBxNieYTzy7/j22LWVo=
+  dependencies:
+    apollo-server-env "2.2.0"
+    graphql-extensions "0.3.3"
 
 apollo-tracing@0.4.1:
   version "0.4.1"
@@ -2632,6 +2844,14 @@ builtins@^1.0.3:
   resolved "https://registry.npmjs.org/builtins/-/builtins-1.0.3.tgz#cb94faeb61c8696451db36534e1422f94f0aee88"
   integrity sha1-y5T662HIaWRR2zZTThQi+U8K7og=
 
+busboy@^0.2.14:
+  version "0.2.14"
+  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/busboy/-/busboy-0.2.14.tgz#6c2a622efcf47c57bbbe1e2a9c37ad36c7925453"
+  integrity sha1-bCpiLvz0fFe7vh4qnDetNseSVFM=
+  dependencies:
+    dicer "0.2.5"
+    readable-stream "1.1.x"
+
 busboy@^0.3.0:
   version "0.3.0"
   resolved "https://registry.npmjs.org/busboy/-/busboy-0.3.0.tgz#6ee3cb1c844fc1f691d8f9d824f70128b3b5e485"
@@ -2775,6 +2995,15 @@ caseless@~0.12.0:
   version "0.12.0"
   resolved "https://registry.npmjs.org/caseless/-/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"
   integrity sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw=
+
+chalk@2.4.1:
+  version "2.4.1"
+  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/chalk/-/chalk-2.4.1.tgz#18c49ab16a037b6eb0152cc83e3471338215b66e"
+  integrity sha1-GMSasWoDe26wFSzIPjRxM4IVtm4=
+  dependencies:
+    ansi-styles "^3.2.1"
+    escape-string-regexp "^1.0.5"
+    supports-color "^5.3.0"
 
 chalk@2.4.2, chalk@^2.0.0, chalk@^2.0.1, chalk@^2.1.0, chalk@^2.3.1, chalk@^2.4.1:
   version "2.4.2"
@@ -3276,7 +3505,7 @@ copy-descriptor@^0.1.0:
   resolved "https://registry.npmjs.org/copy-descriptor/-/copy-descriptor-0.1.1.tgz#676f6eb3c39997c2ee1ac3a924fd6124748f578d"
   integrity sha1-Z29us8OZl8LuGsOpJP1hJHSPV40=
 
-core-js@^2.4.1:
+core-js@^2.4.1, core-js@^2.5.7:
   version "2.6.3"
   resolved "https://registry.npmjs.org/core-js/-/core-js-2.6.3.tgz#4b70938bdffdaf64931e66e2db158f0892289c49"
   integrity sha512-l00tmFFZOBHtYhN4Cz7k32VM7vTn3rE2ANjQDxdEN6zmXZ/xq1jQuutnmHvMG1ZJ7xd72+TA5YpUK8wz3rWsfQ==
@@ -3542,10 +3771,20 @@ deep-is@~0.1.3:
   resolved "https://registry.npmjs.org/deep-is/-/deep-is-0.1.3.tgz#b369d6fb5dbc13eecf524f91b070feedc357cf34"
   integrity sha1-s2nW+128E+7PUk+RsHD+7cNXzzQ=
 
+deepmerge@2.2.1:
+  version "2.2.1"
+  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/deepmerge/-/deepmerge-2.2.1.tgz#5d3ff22a01c00f645405a2fbc17d0778a1801170"
+  integrity sha1-XT/yKgHAD2RUBaL7wX0HeKGAEXA=
+
 deepmerge@3.0.0:
   version "3.0.0"
   resolved "https://registry.npmjs.org/deepmerge/-/deepmerge-3.0.0.tgz#ca7903b34bfa1f8c2eab6779280775a411bfc6ba"
   integrity sha512-a8z8bkgHsAML+uHLqmMS83HHlpy3PvZOOuiTQqaa3wu8ZVg3h0hqHk6aCsGdOnZV2XMM/FRimNGjUh0KCcmHBw==
+
+deepmerge@3.1.0:
+  version "3.1.0"
+  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/deepmerge/-/deepmerge-3.1.0.tgz#a612626ce4803da410d77554bfd80361599c034d"
+  integrity sha1-phJibOSAPaQQ13VUv9gDYVmcA00=
 
 default-gateway@^2.6.0:
   version "2.7.2"
@@ -3618,6 +3857,11 @@ depd@~1.1.2:
   resolved "https://registry.npmjs.org/depd/-/depd-1.1.2.tgz#9bcd52e14c097763e749b274c4346ed2e560b5a9"
   integrity sha1-m81S4UwJd2PnSbJ0xDRu0uVgtak=
 
+dependency-graph@0.8.0:
+  version "0.8.0"
+  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/dependency-graph/-/dependency-graph-0.8.0.tgz#2da2d35ed852ecc24a5d6c17788ba57c3708755b"
+  integrity sha1-LaLTXthS7MJKXWwXeIulfDcIdVs=
+
 deprecated-decorator@^0.1.6:
   version "0.1.6"
   resolved "https://registry.npmjs.org/deprecated-decorator/-/deprecated-decorator-0.1.6.tgz#00966317b7a12fe92f3cc831f7583af329b86c37"
@@ -3672,6 +3916,14 @@ diagnostics@^1.1.1:
     colorspace "1.1.x"
     enabled "1.0.x"
     kuler "1.0.x"
+
+dicer@0.2.5:
+  version "0.2.5"
+  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/dicer/-/dicer-0.2.5.tgz#5996c086bb33218c812c090bddc09cd12facb70f"
+  integrity sha1-WZbAhrszIYyBLAkL3cCc0S+stw8=
+  dependencies:
+    readable-stream "1.1.x"
+    streamsearch "0.1.2"
 
 dicer@0.3.0:
   version "0.3.0"
@@ -4219,7 +4471,7 @@ expand-tilde@^2.0.0, expand-tilde@^2.0.2:
   dependencies:
     homedir-polyfill "^1.0.1"
 
-express@4.16.4, express@^4.16.2:
+express@4.16.4, express@^4.0.0, express@^4.16.2:
   version "4.16.4"
   resolved "https://registry.npmjs.org/express/-/express-4.16.4.tgz#fddef61926109e24c515ea97fd2f1bdbf62df12e"
   integrity sha512-j12Uuyb4FMrd/qQAm6uCHAkPtO8FDTRJZBDd5D2KOL2eLaz1yUNdUB/NOIyq0iU4q4cFarsUCrnFDPBcnksuOg==
@@ -4388,6 +4640,13 @@ figgy-pudding@^3.4.1, figgy-pudding@^3.5.1:
   resolved "https://registry.npmjs.org/figgy-pudding/-/figgy-pudding-3.5.1.tgz#862470112901c727a0e495a80744bd5baa1d6790"
   integrity sha512-vNKxJHTEKNThjfrdJwHc7brvM6eVevuO5nTj6ez8ZQ1qbXTvGthucRF7S4vf2cr71QVnT70V34v0S1DyQsti0w==
 
+figures@2.0.0, figures@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npmjs.org/figures/-/figures-2.0.0.tgz#3ab1a2d2a62c8bfb431a0c94cb797a2fce27c962"
+  integrity sha1-OrGi0qYsi/tDGgyUy3l6L84nyWI=
+  dependencies:
+    escape-string-regexp "^1.0.5"
+
 figures@^1.7.0:
   version "1.7.0"
   resolved "https://registry.npmjs.org/figures/-/figures-1.7.0.tgz#cbe1e3affcf1cd44b80cadfed28dc793a9701d2e"
@@ -4395,13 +4654,6 @@ figures@^1.7.0:
   dependencies:
     escape-string-regexp "^1.0.5"
     object-assign "^4.1.0"
-
-figures@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.npmjs.org/figures/-/figures-2.0.0.tgz#3ab1a2d2a62c8bfb431a0c94cb797a2fce27c962"
-  integrity sha1-OrGi0qYsi/tDGgyUy3l6L84nyWI=
-  dependencies:
-    escape-string-regexp "^1.0.5"
 
 file-entry-cache@^2.0.0:
   version "2.0.0"
@@ -4963,6 +5215,20 @@ graphql-config@2.2.1:
     lodash "^4.17.4"
     minimatch "^3.0.4"
 
+graphql-extensions@0.3.3:
+  version "0.3.3"
+  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/graphql-extensions/-/graphql-extensions-0.3.3.tgz#277efe11976bbdfd59915551606a2d550247bb45"
+  integrity sha1-J37+EZdrvf1ZkVVRYGotVQJHu0U=
+  dependencies:
+    "@apollographql/apollo-tools" "^0.2.6"
+
+graphql-extensions@0.3.6:
+  version "0.3.6"
+  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/graphql-extensions/-/graphql-extensions-0.3.6.tgz#9ddb294b4b3303df4bbfd8258f10ad402e290dba"
+  integrity sha1-ndspS0szA99Lv9gljxCtQC4pDbo=
+  dependencies:
+    "@apollographql/apollo-tools" "^0.2.6"
+
 graphql-extensions@0.4.2:
   version "0.4.2"
   resolved "https://registry.yarnpkg.com/graphql-extensions/-/graphql-extensions-0.4.2.tgz#186a567ac06f4010e366bc9da77605be1e8b6f17"
@@ -5010,10 +5276,29 @@ graphql-tag-pluck@0.5.0:
     source-map-support "^0.5.9"
     typescript "^3.2.2"
 
+graphql-tag@2.10.0:
+  version "2.10.0"
+  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/graphql-tag/-/graphql-tag-2.10.0.tgz#87da024be863e357551b2b8700e496ee2d4353ae"
+  integrity sha1-h9oCS+hj41dVGyuHAOSW7i1DU64=
+
 graphql-tag@2.10.1, graphql-tag@^2.9.2:
   version "2.10.1"
   resolved "https://registry.npmjs.org/graphql-tag/-/graphql-tag-2.10.1.tgz#10aa41f1cd8fae5373eaf11f1f67260a3cad5e02"
   integrity sha512-jApXqWBzNXQ8jYa/HLkZJaVw9jgwNqZkywa2zfFn16Iv1Zb7ELNHkJaXHR7Quvd5SIGsy6Ny7SUKATgnu05uEg==
+
+graphql-toolkit@0.0.3:
+  version "0.0.3"
+  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/graphql-toolkit/-/graphql-toolkit-0.0.3.tgz#b3039d4184f01f9a50fbe84010310894b9581a56"
+  integrity sha1-swOdQYTwH5pQ++hAEDEIlLlYGlY=
+  dependencies:
+    deepmerge "3.1.0"
+    glob "7.1.3"
+    graphql-import "0.7.1"
+    graphql-tag-pluck "0.5.0"
+    is-glob "4.0.0"
+    is-valid-path "0.1.1"
+    request "2.88.0"
+    valid-url "1.0.9"
 
 graphql-tools@4.0.3, graphql-tools@^4.0.0:
   version "4.0.3"
@@ -5047,7 +5332,14 @@ graphql-upload@^8.0.2:
     http-errors "^1.7.1"
     object-path "^0.11.4"
 
-graphql@14.0.2, graphql@14.1.1, graphql@^14.0.2:
+graphql@14.0.2:
+  version "14.0.2"
+  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/graphql/-/graphql-14.0.2.tgz#7dded337a4c3fd2d075692323384034b357f5650"
+  integrity sha1-fd7TN6TD/S0HVpIyM4QDSzV/VlA=
+  dependencies:
+    iterall "^1.2.2"
+
+graphql@14.1.1, graphql@^14.0.2:
   version "14.1.1"
   resolved "https://registry.npmjs.org/graphql/-/graphql-14.1.1.tgz#d5d77df4b19ef41538d7215d1e7a28834619fac0"
   integrity sha512-C5zDzLqvfPAgTtP8AUPIt9keDabrdRAqSWjj2OPRKrKxI9Fb65I36s1uCs1UUBFnSWTdO7hyHi7z1ZbwKMKF6Q==
@@ -5962,6 +6254,13 @@ json-stable-stringify-without-jsonify@^1.0.1:
   resolved "https://registry.npmjs.org/json-stable-stringify-without-jsonify/-/json-stable-stringify-without-jsonify-1.0.1.tgz#9db7b59496ad3f3cfef30a75142d2d930ad72651"
   integrity sha1-nbe1lJatPzz+8wp1FC0tkwrXJlE=
 
+json-stable-stringify@^1.0.1:
+  version "1.0.1"
+  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/json-stable-stringify/-/json-stable-stringify-1.0.1.tgz#9a759d39c5f2ff503fd5300646ed445f88c4f9af"
+  integrity sha1-mnWdOcXy/1A/1TAGRu1EX4jE+a8=
+  dependencies:
+    jsonify "~0.0.0"
+
 json-stringify-safe@^5.0.1, json-stringify-safe@~5.0.1:
   version "5.0.1"
   resolved "https://registry.npmjs.org/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz#1296a2d58fd45f19a0f6ce01d65701e2c735b6eb"
@@ -6005,6 +6304,11 @@ jsonfile@^4.0.0:
   integrity sha1-h3Gq4HmbZAdrdmQPygWPnBDjPss=
   optionalDependencies:
     graceful-fs "^4.1.6"
+
+jsonify@~0.0.0:
+  version "0.0.0"
+  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/jsonify/-/jsonify-0.0.0.tgz#2c74b6ee41d93ca51b7b5aaee8f503631d252a73"
+  integrity sha1-LHS27kHZPKUbe1qu6PUDYx0lKnM=
 
 jsonparse@^1.2.0:
   version "1.3.1"
@@ -6999,6 +7303,11 @@ node-fetch@2.1.2:
   resolved "https://registry.npmjs.org/node-fetch/-/node-fetch-2.1.2.tgz#ab884e8e7e57e38a944753cec706f788d1768bb5"
   integrity sha1-q4hOjn5X44qUR1POxwb3iNF2i7U=
 
+node-fetch@2.3.0, node-fetch@^2.1.2, node-fetch@^2.2.0:
+  version "2.3.0"
+  resolved "https://registry.npmjs.org/node-fetch/-/node-fetch-2.3.0.tgz#1a1d940bbfb916a1d3e0219f037e89e71f8c5fa5"
+  integrity sha512-MOd8pV3fxENbryESLgVIeaGKrdl+uaYhCSSVkjeOb/31/njTpcis5aWfdqgNlHIrKOLRbMnfPINPOML2CIFeXA==
+
 node-fetch@^1.0.1:
   version "1.7.3"
   resolved "https://registry.npmjs.org/node-fetch/-/node-fetch-1.7.3.tgz#980f6f72d85211a5347c6b2bc18c5b84c3eb47ef"
@@ -7006,11 +7315,6 @@ node-fetch@^1.0.1:
   dependencies:
     encoding "^0.1.11"
     is-stream "^1.0.1"
-
-node-fetch@^2.1.2, node-fetch@^2.2.0:
-  version "2.3.0"
-  resolved "https://registry.npmjs.org/node-fetch/-/node-fetch-2.3.0.tgz#1a1d940bbfb916a1d3e0219f037e89e71f8c5fa5"
-  integrity sha512-MOd8pV3fxENbryESLgVIeaGKrdl+uaYhCSSVkjeOb/31/njTpcis5aWfdqgNlHIrKOLRbMnfPINPOML2CIFeXA==
 
 node-forge@0.7.5:
   version "0.7.5"
@@ -7330,7 +7634,7 @@ onetime@^2.0.0:
   dependencies:
     mimic-fn "^1.0.0"
 
-opn@^5.1.0:
+opn@5.4.0, opn@^5.1.0:
   version "5.4.0"
   resolved "https://registry.npmjs.org/opn/-/opn-5.4.0.tgz#cb545e7aab78562beb11aa3bfabc7042e1761035"
   integrity sha512-YF9MNdVy/0qvJvDtunAOzFw9iasOQHpVthTCvGzxt61Il64AYSGdK+rYwld7NAfk9qJ7dt+hymBNSc9LNYS+Sw==
@@ -8044,6 +8348,16 @@ react-dom@16.7.0:
     prop-types "^15.6.2"
     scheduler "^0.12.0"
 
+react-dom@16.7.0-alpha.2:
+  version "16.7.0-alpha.2"
+  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/react-dom/-/react-dom-16.7.0-alpha.2.tgz#16632880ed43676315991d8b412cce6975a30282"
+  integrity sha1-FmMogO1DZ2MVmR2LQSzOaXWjAoI=
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+    prop-types "^15.6.2"
+    scheduler "^0.12.0-alpha.2"
+
 react-hot-loader@4.6.5:
   version "4.6.5"
   resolved "https://registry.yarnpkg.com/react-hot-loader/-/react-hot-loader-4.6.5.tgz#059619c8ac2aae9c6e8178ddc2eac535093cdd2e"
@@ -8078,6 +8392,16 @@ react@16.7.0:
     object-assign "^4.1.1"
     prop-types "^15.6.2"
     scheduler "^0.12.0"
+
+react@16.7.0-alpha.2:
+  version "16.7.0-alpha.2"
+  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/react/-/react-16.7.0-alpha.2.tgz#924f2ae843a46ea82d104a8def7a599fbf2c78ce"
+  integrity sha1-kk8q6EOkbqgtEEqN73pZn78seM4=
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+    prop-types "^15.6.2"
+    scheduler "^0.12.0-alpha.2"
 
 read-cmd-shim@^1.0.1:
   version "1.0.1"
@@ -8173,6 +8497,16 @@ readable-stream@1.0:
     isarray "0.0.1"
     string_decoder "~0.10.x"
 
+readable-stream@1.1.x:
+  version "1.1.14"
+  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/readable-stream/-/readable-stream-1.1.14.tgz#7cf4c54ef648e3813084c636dd2079e166c081d9"
+  integrity sha1-fPTFTvZI44EwhMY23SB54WbAgdk=
+  dependencies:
+    core-util-is "~1.0.0"
+    inherits "~2.0.1"
+    isarray "0.0.1"
+    string_decoder "~0.10.x"
+
 readable-stream@^3.0.6:
   version "3.1.1"
   resolved "https://registry.npmjs.org/readable-stream/-/readable-stream-3.1.1.tgz#ed6bbc6c5ba58b090039ff18ce670515795aeb06"
@@ -8235,6 +8569,11 @@ regenerate@^1.4.0:
   version "1.4.0"
   resolved "https://registry.npmjs.org/regenerate/-/regenerate-1.4.0.tgz#4a856ec4b56e4077c557589cae85e7a4c8869a11"
   integrity sha512-1G6jJVDWrt0rK99kBjvEtziZNCICAuvIPkSiUFIQxVP06RCVpq3dmDo2oi6ABpYaDYaTRr67BEhL8r1wgEZZKg==
+
+regenerator-runtime@^0.12.0:
+  version "0.12.1"
+  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/regenerator-runtime/-/regenerator-runtime-0.12.1.tgz#fa1a71544764c036f8c49b13a08b2594c9f8a0de"
+  integrity sha1-+hpxVEdkwDb4xJsToIsllMn4oN4=
 
 regenerator-transform@^0.13.3:
   version "0.13.3"
@@ -8508,7 +8847,7 @@ sax@^1.2.4:
   resolved "https://registry.npmjs.org/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
   integrity sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==
 
-scheduler@^0.12.0:
+scheduler@^0.12.0, scheduler@^0.12.0-alpha.2:
   version "0.12.0"
   resolved "https://registry.npmjs.org/scheduler/-/scheduler-0.12.0.tgz#8ab17699939c0aedc5a196a657743c496538647b"
   integrity sha512-t7MBR28Akcp4Jm+QoR63XgAi9YgCUmgvDHqf5otgAj4QvdoBE4ImCX0ffehefePPG+aitiYHp0g/mW6s4Tp+dw==

@@ -9,6 +9,13 @@
     "**/react": "16.7.0",
     "**/react-dom": "16.7.0"
   },
+  "graphql-inspector": {
+    "diff": true,
+    "schema": {
+      "ref": "head/master",
+      "path": "packages/graphql-gateway/src/schema/post.graphql"
+    }
+  },
   "devDependencies": {
     "lerna": "3.10.7"
   }
