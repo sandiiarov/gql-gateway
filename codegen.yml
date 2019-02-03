@@ -1,6 +1,6 @@
 overwrite: true
 generates:
-  ./generated/gateway.ts:
+  ./__generated__/gateway.ts:
     schema:
       - ./src/schema/schema.graphql
     config:
@@ -8,14 +8,14 @@ generates:
     plugins:
       - typescript-common
       - typescript-server
-  ./generated/user.ts:
+  ./__generated__/user.ts:
     schema: ./src/schema/user.graphql
     config:
       noNamespaces: true
     plugins:
       - typescript-common
       - typescript-server
-  ./generated/post.ts:
+  ./__generated__/post.ts:
     schema: ./src/schema/post.graphql
     config:
       noNamespaces: true

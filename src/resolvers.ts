@@ -1,7 +1,7 @@
 import { GraphQLSchema } from 'graphql';
 import { IDelegateToSchemaOptions, IResolversParameter } from 'graphql-tools';
-import { PostsQueryArgs } from '../generated/post';
-import { User } from '../generated/user';
+import { PostsQueryArgs } from '../__generated__/post';
+import { User } from '../__generated__/user';
 interface Schemas {
   [name: string]: GraphQLSchema;
 }

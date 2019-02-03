@@ -1,7 +1,0 @@
-query GetPost($id: ID!) {
-  post(where: { id: $id }) {
-    id
-    body
-    title
-  }
-}

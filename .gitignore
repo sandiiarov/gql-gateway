@@ -1,6 +1,4 @@
-node_modules
-dist
 *.log
 .DS_Store
-.docz
-generated
+node_modules
+dist
