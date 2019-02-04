@@ -12,7 +12,7 @@
   "graphql-inspector": {
     "diff": true,
     "schema": {
-      "ref": "head/master",
+      "ref": "master",
       "path": "./src/schema/schema.graphql"
     }
   },
