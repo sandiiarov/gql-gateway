@@ -13,7 +13,7 @@
     "diff": true,
     "schema": {
       "ref": "head/master",
-      "path": "src/schema/schema.graphql"
+      "path": "./src/schema/schema.graphql"
     }
   },
   "dependencies": {
