@@ -6,6 +6,8 @@
   "scripts": {
     "start": "tsc && node -e \"require('./dist/src/index.js').run()\"",
     "generate:schema": "ts-node -e \"require('./src/index.ts').gateway.generateSchema()\"",
+    "generate:schema:user": "get-graphql-schema http://localhost:4001/graphql > schema/user.graphql",
+    "generate:schema:post": "get-graphql-schema http://localhost:4002/graphql > schema/post.graphql",
     "generate:types": "gql-gen"
   },
   "dependencies": {
