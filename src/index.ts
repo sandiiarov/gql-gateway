@@ -1,16 +1,20 @@
-import Gateway from './gateway';
+import Gateway from './tools/gateway';
 
-const gateway = new Gateway({
+export const gateway = new Gateway({
   user: {
-    definition: './src/schema/user.graphql',
+    definition: './schema/user.graphql',
     endpoint: 'http://localhost:4001/graphql',
   },
   post: {
-    definition: './src/schema/post.graphql',
+    definition: './schema/post.graphql',
     endpoint: 'http://localhost:4002/graphql',
+  },
+  link: {
+    definition: './src/schema.graphql',
   },
 });
 
-gateway.listen({ port: 4000 }).then(({ url }) => {
+export async function run() {
+  const { url } = await gateway.listen(4000);
   console.log(`🚀  ${url}`);
-});
+}
