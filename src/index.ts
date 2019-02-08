@@ -11,4 +11,6 @@ const gateway = new Gateway({
   },
 });
 
-gateway.listen({ port: 4000 });
+gateway.listen({ port: 4000 }).then(({ url }) => {
+  console.log(`🚀  ${url}`);
+});

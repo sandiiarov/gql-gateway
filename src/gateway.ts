@@ -1,7 +1,5 @@
-import { ApolloEngine } from 'apollo-engine';
 import { HttpLink } from 'apollo-link-http';
-import { ApolloServer } from 'apollo-server-express';
-import express from 'express';
+import { ApolloServer } from 'apollo-server';
 import fs from 'fs';
 import { GraphQLSchema, printSchema } from 'graphql';
 import { makeRemoteExecutableSchema, mergeSchemas } from 'graphql-tools';
@@ -14,8 +12,6 @@ interface Config {
     endpoint: string;
   };
 }
-
-const APOLLO_ENGINE_KEY = 'service:sandiiarov-7698:rv3UnQr4OVxC35oJ5pYCMw';
 
 class Gateway {
   private config: Config;
@@ -52,24 +48,13 @@ class Gateway {
   }
 
   public listen({ port }: { port: string | number }) {
-    const app = express();
-    const engine = new ApolloEngine({ apiKey: APOLLO_ENGINE_KEY });
-
     const schema = this.makeSchemas();
 
     fs.writeFileSync('src/schema/schema.graphql', printSchema(schema));
 
-    const server = new ApolloServer({
-      schema,
-      introspection: true,
-      engine: false,
-    });
+    const server = new ApolloServer({ schema, introspection: true });
 
-    server.applyMiddleware({ app });
-
-    engine.listen({ port, expressApp: app }, () => {
-      console.log(`🚀 RUNNING @ ${port}`);
-    });
+    return server.listen({ port });
   }
 }
 
