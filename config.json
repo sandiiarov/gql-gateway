@@ -1,13 +1,13 @@
 {
   "user": {
-    "definition": "./schema/user.graphql",
+    "definition": "schema/user.graphql",
     "endpoint": "http://localhost:4001/graphql"
   },
   "post": {
-    "definition": "./schema/post.graphql",
+    "definition": "schema/post.graphql",
     "endpoint": "http://localhost:4002/graphql"
   },
   "link": {
-    "definition": "./schema/link.graphql"
+    "definition": "schema/link.graphql"
   }
 }
