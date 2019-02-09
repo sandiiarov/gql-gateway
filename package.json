@@ -8,6 +8,12 @@
     "generate:schema": "ts-node -e \"require('./src/index.ts').gateway.generateSchema()\"",
     "generate:types": "gql-gen"
   },
+  "gql-doctor": {
+    "schema": {
+      "ref": "head/master",
+      "path": "schema/schema.graphql"
+    }
+  },
   "dependencies": {
     "apollo-link-http": "1.5.11",
     "apollo-server": "2.4.0",
