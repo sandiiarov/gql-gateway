@@ -10,6 +10,12 @@
     "generate:schema:post": "get-graphql-schema http://localhost:4002/graphql > schema/post.graphql",
     "generate:types": "gql-gen"
   },
+  "gql-doctor": {
+    "schema": {
+      "ref": "head/master",
+      "path": "schema/schema.graphql"
+    }
+  },
   "dependencies": {
     "apollo-link-http": "1.5.11",
     "apollo-server": "2.4.0",
