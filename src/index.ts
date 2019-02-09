@@ -10,7 +10,7 @@ export const gateway = new Gateway({
     endpoint: 'http://localhost:4002/graphql',
   },
   link: {
-    definition: './src/schema.graphql',
+    definition: './schema/link.graphql',
   },
 });
 

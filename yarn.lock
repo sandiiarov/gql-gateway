@@ -1701,16 +1701,6 @@ gauge@~2.7.3:
     strip-ansi "^3.0.1"
     wide-align "^1.1.0"
 
-get-graphql-schema@2.1.2:
-  version "2.1.2"
-  resolved "https://registry.npmjs.org/get-graphql-schema/-/get-graphql-schema-2.1.2.tgz#ffa418534224a75cd7afc8f87b70109ca9ec3fe9"
-  integrity sha512-1z5Hw91VrE3GrpCZE6lE8Dy+jz4kXWesLS7rCSjwOxf5BOcIedAZeTUJRIeIzmmR+PA9CKOkPTYFRJbdgUtrxA==
-  dependencies:
-    chalk "^2.4.1"
-    graphql "^14.0.2"
-    minimist "^1.2.0"
-    node-fetch "^2.2.0"
-
 get-stdin@^6.0.0:
   version "6.0.0"
   resolved "https://registry.npmjs.org/get-stdin/-/get-stdin-6.0.0.tgz#9e09bf712b360ab9225e812048f71fde9c89657b"
@@ -1929,7 +1919,7 @@ graphql-upload@^8.0.2:
     http-errors "^1.7.1"
     object-path "^0.11.4"
 
-graphql@14.1.1, graphql@^14.0.2:
+graphql@14.1.1:
   version "14.1.1"
   resolved "https://registry.npmjs.org/graphql/-/graphql-14.1.1.tgz#d5d77df4b19ef41538d7215d1e7a28834619fac0"
   integrity sha512-C5zDzLqvfPAgTtP8AUPIt9keDabrdRAqSWjj2OPRKrKxI9Fb65I36s1uCs1UUBFnSWTdO7hyHi7z1ZbwKMKF6Q==
