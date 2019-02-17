@@ -5,7 +5,7 @@
   },
   "post": {
     "definition": "schema/post.graphql",
-    "endpoint": "http://localhost:4001/graphql"
+    "endpoint": "http://localhost:4002/graphql"
   },
   "link": {
     "definition": "schema/link.graphql"
