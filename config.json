@@ -1,6 +1,6 @@
 {
   "user": {
-    "definition": "1schema/user.graphql",
+    "definition": "2schema/user.graphql",
     "endpoint": "http://localhost:4003/graphql"
   },
   "post": {
