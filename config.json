@@ -1,7 +1,7 @@
 {
   "user": {
     "definition": "schema/user.graphql",
-    "endpoint": "http://localhost:4006/graphql"
+    "endpoint": "http://localhost:4007/graphql"
   },
   "post": {
     "definition": "schema/post.graphql",
