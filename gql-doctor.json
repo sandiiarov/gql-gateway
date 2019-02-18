@@ -1,0 +1,24 @@
+{
+  "services": [
+    {
+      "name": "user",
+      "owner": "sandiiarov",
+      "repo": "gql-user",
+      "ref": "master",
+      "path": "src/schema.graphql"
+    },
+    {
+      "name": "post",
+      "owner": "sandiiarov",
+      "repo": "gql-post",
+      "ref": "master",
+      "path": "src/schema.graphql"
+    }
+  ],
+  "linkTypeDefs": {
+    "owner": "sandiiarov",
+    "repo": "gql-gateway",
+    "ref": "master",
+    "path": "schema/link.graphql"
+  }
+}
