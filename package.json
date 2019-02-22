@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "apollo-link-http": "1.5.11",
-    "apollo-server": "2.4.0",
+    "apollo-server": "2.4.6",
     "graphql": "14.1.1",
     "graphql-tools": "4.0.4",
     "isomorphic-fetch": "2.2.1"
