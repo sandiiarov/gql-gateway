@@ -2,17 +2,17 @@
   "services": [
     {
       "name": "user",
-      "owner": "gql-doctor",
-      "repo": "example",
+      "owner": "sandiiarov",
+      "repo": "gql-user",
       "ref": "master",
-      "path": "user.graphql"
+      "path": "src/schema.graphql"
     },
     {
       "name": "post",
-      "owner": "gql-doctor",
-      "repo": "example",
+      "owner": "sandiiarov",
+      "repo": "gql-post",
       "ref": "master",
-      "path": "post.graphql"
+      "path": "src/schema.graphql"
     }
   ],
   "linkTypeDefs": {
